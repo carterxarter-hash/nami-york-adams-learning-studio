@@ -1,0 +1,16 @@
+{
+  "name": "NAMI York Adams",
+  "short_name": "NAMI York Adams",
+  "description": "NAMI York-Adams volunteer learning, practice, scenarios, flashcards, and facilitator tools.",
+  "start_url": "./?v=4#home",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#091a35",
+  "theme_color": "#091a35",
+  "orientation": "any",
+  "icons": [
+    {"src":"./icons/matrix-nami.svg?v=3","sizes":"any","type":"image/svg+xml","purpose":"any"},
+    {"src":"./icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"./icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
