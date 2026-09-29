@@ -1,0 +1,6 @@
+[build]
+  command = "python -m pip install --quiet pillow && python scripts/prepare_pages.py"
+  publish = "."
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
