@@ -1,0 +1,49 @@
+name: Validate Netlify production build
+
+on:
+  push:
+    paths:
+      - '.github/workflows/netlify-build-check.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build production site
+        run: npm run build
+
+      - name: Verify production output
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f dist/index.html
+          test -f dist/sw.js
+          test -f dist/resources/sw-sfx/archives.json
+          count=$(find dist/resources/sw-sfx -maxdepth 1 -name 'part-*.zip' | wc -l | tr -d ' ')
+          test "$count" = '16'
+          if find dist/resources/sw-sfx -maxdepth 1 -name 'part-*.zip' -size +9M | grep -q .; then
+            echo 'One or more SFX parts exceed 9 MB.'
+            exit 1
+          fi
+          du -sh dist
+          ls -lh dist/resources/sw-sfx
+
+      - name: Upload verified Netlify build
+        uses: actions/upload-artifact@v4
+        with:
+          name: netlify-production-dist
+          path: dist/
+          compression-level: 0
+          retention-days: 7
