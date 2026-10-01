@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Open a program and complete a lesson",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "program navigation",
+      "lesson navigation",
+      "local progress state"
+    ],
+    "description": "Verifies the main learning workflow opens a program lesson and records completion.",
+    "steps": [
+      "From Learning Home, open NAMI Connection Recovery Support Group",
+      "Open the first lesson",
+      "Use the lesson completion control to mark the lesson learned"
+    ],
+    "expected": "The lesson shows as completed and the Learning Studio remains navigable."
+  },
+  {
+    "name": "Use the mobile navigation and Matrix audio controls",
+    "viewport": "mobile",
+    "covers": [
+      "mobile navigation drawer",
+      "theme selection",
+      "Matrix soundtrack controls",
+      "Matrix SFX controls"
+    ],
+    "description": "Verifies the iPhone-sized layout can navigate to Themes, activate Matrix, and expose its audio controls without requiring external playback.",
+    "steps": [
+      "Open the mobile navigation menu",
+      "Go to Themes and choose Matrix Terminal",
+      "Stay on Themes and inspect the Matrix audio settings section",
+      "Toggle Matrix sound effects off and on",
+      "Return to Learning Home and confirm no Matrix audio panel floats over the page"
+    ],
+    "expected": "The mobile menu is usable, Matrix becomes the active theme, soundtrack and SFX controls are available inline on Themes, and no floating Matrix audio panel appears on Learning Home."
+  },
+  {
+    "name": "Search for a known learning topic",
+    "viewport": "desktop",
+    "covers": ["global search", "search result navigation"],
+    "description": "Verifies the Studio can search its learning content and open a matching result.",
+    "steps": [
+      "Use Search the studio to search for privacy",
+      "Open one of the returned learning results"
+    ],
+    "expected": "At least one relevant result is shown and the selected result opens inside the Learning Studio."
+  },
+  {
+    "name": "Handle a search with no matches",
+    "viewport": "mobile",
+    "covers": ["search empty state", "search recovery guidance"],
+    "description": "Verifies a nonsense search fails gracefully instead of leaving a blank or broken screen.",
+    "steps": [
+      "Search the studio for zzz-no-such-learning-topic-999",
+      "Review the search results area"
+    ],
+    "expected": "The page reports 0 results and shows the No matching topics yet guidance with a suggestion to try a shorter word or program name."
+  },
+  {
+    "name": "Use the Star Wars theme and audio controls",
+    "viewport": "desktop",
+    "covers": [
+      "Star Wars theme selection",
+      "Star Wars typography legibility",
+      "Star Wars soundtrack controls",
+      "Star Wars SFX controls",
+      "Star Wars ambience controls",
+      "Star Wars voice-line controls",
+      "Star Wars sound-library status"
+    ],
+    "description": "Verifies the Star Wars theme keeps decorative lettering focused on display text while its soundtrack, sound-effects, and ambience controls remain usable.",
+    "steps": [
+      "Go to Themes and choose Star Wars",
+      "Inspect the page heading, body copy, navigation, and Star Wars audio settings",
+      "Toggle Star Wars sound effects off and on",
+      "Toggle ambience off and on and adjust the ambience slider",
+      "Confirm the Voices control is visible and the sound-library status is shown"
+    ],
+    "expected": "Star Wars remains active, display headings use the themed lettering while body and control text stay readable, soundtrack/SFX/ambience/voice controls remain usable, and the sound-library status is visible."
+  }
+]
