@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "sourceEntries": 796,
+  "archives": [
+    {
+      "file": "part-01.zip",
+      "bytes": 5279978,
+      "entries": 86
+    },
+    {
+      "file": "part-02.zip",
+      "bytes": 5077381,
+      "entries": 58
+    },
+    {
+      "file": "part-03.zip",
+      "bytes": 5232995,
+      "entries": 32
+    },
+    {
+      "file": "part-04.zip",
+      "bytes": 5201528,
+      "entries": 64
+    },
+    {
+      "file": "part-05.zip",
+      "bytes": 5153367,
+      "entries": 50
+    },
+    {
+      "file": "part-06.zip",
+      "bytes": 5205138,
+      "entries": 47
+    },
+    {
+      "file": "part-07.zip",
+      "bytes": 4958559,
+      "entries": 50
+    },
+    {
+      "file": "part-08.zip",
+      "bytes": 5147790,
+      "entries": 32
+    },
+    {
+      "file": "part-09.zip",
+      "bytes": 5235104,
+      "entries": 53
+    },
+    {
+      "file": "part-10.zip",
+      "bytes": 5253358,
+      "entries": 53
+    },
+    {
+      "file": "part-11.zip",
+      "bytes": 5015044,
+      "entries": 43
+    },
+    {
+      "file": "part-12.zip",
+      "bytes": 5178954,
+      "entries": 33
+    },
+    {
+      "file": "part-13.zip",
+      "bytes": 5240504,
+      "entries": 60
+    },
+    {
+      "file": "part-14.zip",
+      "bytes": 5213516,
+      "entries": 58
+    },
+    {
+      "file": "part-15.zip",
+      "bytes": 5068094,
+      "entries": 47
+    },
+    {
+      "file": "part-16.zip",
+      "bytes": 2900313,
+      "entries": 30
+    }
+  ]
+}
