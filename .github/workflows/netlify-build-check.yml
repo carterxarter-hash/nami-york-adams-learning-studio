@@ -30,6 +30,10 @@ jobs:
           set -euo pipefail
           test -f dist/index.html
           test -f dist/sw.js
+          test -f dist/manifest.webmanifest
+          test -f dist/icons/icon-180.png
+          test -f dist/icons/icon-192.png
+          test -f dist/icons/icon-512.png
           test -f dist/resources/sw-sfx/archives.json
           count=$(find dist/resources/sw-sfx -maxdepth 1 -name 'part-*.zip' | wc -l | tr -d ' ')
           test "$count" = '16'
@@ -39,6 +43,7 @@ jobs:
           fi
           du -sh dist
           ls -lh dist/resources/sw-sfx
+          echo 'Verified full PWA shell and split Star Wars SFX assets.'
 
       - name: Upload verified Netlify build
         uses: actions/upload-artifact@v4
