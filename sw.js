@@ -1,5 +1,5 @@
-const CACHE = 'nami-learning-studio-2026-10-01-v9-starwars-voices';
-const SHELL = './index.html?v=9';
+const CACHE = 'nami-learning-studio-2026-10-01-v10-split-sfx';
+const SHELL = './index.html?v=10';
 const CORE = [
   SHELL,
   './manifest.webmanifest',
@@ -7,7 +7,7 @@ const CORE = [
   './icons/icon-180.png',
   './icons/icon-192.png',
   './icons/icon-512.png',
-  './public/resources/starwars-font.css?v=2',
+  './resources/starwars-font.css?v=2',
 ];
 
 self.addEventListener('install', (event) => {
