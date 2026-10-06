@@ -4,6 +4,10 @@ on:
   push:
     paths:
       - '.github/workflows/netlify-build-check.yml'
+      - 'index.html'
+      - 'sw.js'
+      - 'scripts/**'
+      - 'package*.json'
   workflow_dispatch:
 
 jobs:
@@ -34,16 +38,10 @@ jobs:
           test -f dist/icons/icon-180.png
           test -f dist/icons/icon-192.png
           test -f dist/icons/icon-512.png
-          test -f dist/resources/sw-sfx/archives.json
-          count=$(find dist/resources/sw-sfx -maxdepth 1 -name 'part-*.zip' | wc -l | tr -d ' ')
-          test "$count" = '16'
-          if find dist/resources/sw-sfx -maxdepth 1 -name 'part-*.zip' -size +9M | grep -q .; then
-            echo 'One or more SFX parts exceed 9 MB.'
-            exit 1
-          fi
+          test -f dist/resources/sw-audio/sounds.json
+          node --input-type=module -e "import fs from 'node:fs'; const m=JSON.parse(fs.readFileSync('dist/resources/sw-audio/sounds.json')); if(m.entries.length<700 || m.entries.some(e=>!fs.existsSync('dist/resources/sw-audio/'+e.file))) process.exit(1);"
           du -sh dist
-          ls -lh dist/resources/sw-sfx
-          echo 'Verified full PWA shell and split Star Wars SFX assets.'
+          echo 'Verified full PWA shell and individually playable Star Wars audio.'
 
       - name: Upload verified Netlify build
         uses: actions/upload-artifact@v4

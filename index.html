@@ -267,9 +267,9 @@ body{min-height:100dvh;padding-bottom:env(safe-area-inset-bottom);overscroll-beh
 @media(max-width:650px){.matrix-audio-top{padding:9px}.matrix-audio-controls{padding:8px 9px;flex-wrap:wrap}.matrix-audio-volume{min-width:140px}.matrix-sfx-row{flex-wrap:wrap}}
 @media(prefers-reduced-motion:reduce){.matrix-audio-led{box-shadow:none}}
 .starwars-audio-dock{position:fixed;left:-10000px;top:0;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none}
-.starwars-audio-settings-controls{display:grid;gap:10px;margin-top:12px}.starwars-audio-settings-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.starwars-audio-settings-row label{display:flex;align-items:center;gap:8px;flex:1;min-width:180px}.starwars-audio-settings-row input[type="range"]{flex:1;accent-color:#ffe17d}
+.starwars-audio-settings-controls{display:grid;gap:10px;margin-top:12px}.starwars-audio-settings-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.starwars-audio-settings-row label{display:flex;align-items:center;gap:8px;flex:1;min-width:180px}.starwars-audio-settings-row input[type="range"]{flex:1;min-width:0;accent-color:#ffe17d}
 .starwars-audio-btn{appearance:none;border:1px solid #55708c;background:#07111f;color:#f7f4e8;border-radius:6px;min-width:34px;height:32px;padding:0 10px;font:inherit;font-size:12px;cursor:pointer}.starwars-audio-btn:hover,.starwars-audio-btn:focus-visible{background:#10233b;border-color:#ffe17d;color:#fff;outline:none}.starwars-audio-btn.primary{background:#293b53;color:#fff;border-color:#ffe17d;min-width:54px}.starwars-audio-note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.55}.starwars-audio-note a{color:#ffe17d}
-.starwars-sfx-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.starwars-sfx-row label{display:flex;align-items:center;gap:8px;flex:1;min-width:180px}.starwars-sfx-row input[type="range"]{flex:1;accent-color:#ffe17d}.starwars-sfx-toggle.on{border-color:#ffe17d;background:#293b53;color:#fff}
+.starwars-sfx-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.starwars-sfx-row label{display:flex;align-items:center;gap:8px;flex:1;min-width:180px}.starwars-sfx-row input[type="range"]{flex:1;min-width:0;accent-color:#ffe17d}.starwars-sfx-toggle.on{border-color:#ffe17d;background:#293b53;color:#fff}
 </style>
 <link rel="stylesheet" href="./resources/starwars-font.css?v=2">
 </head>
@@ -1553,7 +1553,7 @@ themePage=function(){
  `<section class="atmosphere-preview${artwork?' living-preview':''}" aria-label="Preview of the selected theme">${artwork?'<canvas class="atmosphere-preview-canvas" aria-hidden="true"></canvas>':''}<div class="atmosphere-preview-label"><span class="eyebrow">${esc(selected.name)}</span><h2>${esc(ATMOSPHERES[selected.id][1])}</h2></div><button class="btn" data-story="motion" aria-pressed="${!state.settings.motion}">${icon(state.settings.motion?'pause':'spark')}${state.settings.motion?'Pause motion':'Motion paused'}</button></section>`+
  (artwork?`<details class="theme-reference"><summary>Visual inspiration</summary><div><img src="${artwork}" alt="${esc(selected.name)} visual reference" width="112" height="84"><p>${themeArtworkCredit()||'The reference palette and forms are reflected in the animated atmosphere.'}</p></div></details>`:'')+themeFeedbackPreview()+
  '<p class="atmosphere-help">If your device asks for less motion, the app listens. Your theme and motion settings save the same way as the rest of your learning record. On iPhone, the Home Screen icon uses the theme that is active when you add the Studio to your Home Screen.</p>'+ 
- (selected.id==='matrix'?'<section class="panel settings-panel matrix-audio-settings"><div><p class="eyebrow">MATRIX SETTINGS</p><h2>Audio</h2><p>The soundtrack keeps playing while you move around the Studio. Come back here whenever you want to change it.</p></div><div class="matrix-audio-settings-controls"><div class="matrix-audio-settings-row"><button class="matrix-audio-btn" type="button" data-matrix-audio="prev" aria-label="Previous track">◀</button><button class="matrix-audio-btn primary" type="button" data-matrix-audio="toggle">Play</button><button class="matrix-audio-btn" type="button" data-matrix-audio="next" aria-label="Next track">▶</button><label><span>MUSIC</span><input data-matrix-audio="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(matrixAudioPrefs().volume)||38))+'" aria-label="Soundtrack volume"></label></div><div class="matrix-audio-settings-row"><button class="matrix-audio-btn matrix-sfx-toggle" type="button" data-matrix-sfx="toggle" aria-pressed="'+(matrixSfxPrefs().enabled?'true':'false')+'">'+(matrixSfxPrefs().enabled?'SFX on':'SFX off')+'</button><label><span>SFX</span><input data-matrix-sfx="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(matrixSfxPrefs().volume)||34))+'" aria-label="Sound effects volume"></label></div></div></section>':'')+(selected.id==='starwars'?'<section class="panel settings-panel starwars-audio-settings"><div><p class="eyebrow">STAR WARS SETTINGS</p><h2>Original Trilogy audio</h2><p>Only the classic themes from <em>A New Hope</em>, <em>The Empire Strikes Back</em>, and <em>Return of the Jedi</em> are in this rotation. Music keeps going while you move around the Studio and pauses when you leave this theme.</p></div><div class="starwars-audio-settings-controls"><div class="starwars-audio-settings-row"><button class="starwars-audio-btn" type="button" data-starwars-audio="prev" aria-label="Previous track">◀</button><button class="starwars-audio-btn primary" type="button" data-starwars-audio="toggle">'+(starWarsYTPlaying?'Pause':'Play')+'</button><button class="starwars-audio-btn" type="button" data-starwars-audio="next" aria-label="Next track">▶</button><label><span>MUSIC</span><input data-starwars-audio="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(starWarsAudioPrefs().volume)||42))+'" aria-label="Star Wars soundtrack volume"></label></div><div class="starwars-sfx-row"><button class="starwars-audio-btn starwars-sfx-toggle '+(starWarsSfxPrefs().enabled?'on':'')+'" type="button" data-starwars-sfx="toggle" aria-pressed="'+(starWarsSfxPrefs().enabled?'true':'false')+'">'+(starWarsSfxPrefs().enabled?'SFX on':'SFX off')+'</button><label><span>SFX</span><input data-starwars-sfx="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(starWarsSfxPrefs().volume)||34))+'" aria-label="Star Wars sound effects volume"></label></div><div class="starwars-sfx-row"><button class="starwars-audio-btn starwars-sfx-toggle '+(starWarsSfxPrefs().ambient?'on':'')+'" type="button" data-starwars-sfx="ambient" aria-pressed="'+(starWarsSfxPrefs().ambient?'true':'false')+'">'+(starWarsSfxPrefs().ambient?'Ambience on':'Ambience off')+'</button><label><span>AMBIENCE</span><input data-starwars-sfx="intensity" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(starWarsSfxPrefs().intensity)||48))+'" aria-label="Star Wars ambient frequency"></label></div><div class="starwars-sfx-row"><button class="starwars-audio-btn starwars-sfx-toggle '+(starWarsSfxPrefs().voices?'on':'')+'" type="button" data-starwars-sfx="voices" aria-pressed="'+(starWarsSfxPrefs().voices?'true':'false')+'">'+(starWarsSfxPrefs().voices?'Voices on':'Voices off')+'</button><span class="starwars-audio-note" data-starwars-sfx-status>Sound library connecting…</span></div></div><p class="starwars-audio-note"><span data-starwars-track>Original Trilogy classics</span> · John Williams / London Symphony Orchestra. Playback starts only after you tap Play.</p><p class="starwars-audio-note">Expanded SFX mode uses the trimmed archive across telemetry, R2 and BB-8 chatter, lightsabers, blasters, cannons, impacts, explosions, TIE passes, ambience, Vader cues, and movie dialogue. With Voices on, a randomized film line plays roughly every 30–80 seconds and ducks the soundtrack underneath it. Exact quote searches still work as Easter eggs.</p></section>':'')+
+ (selected.id==='matrix'?'<section class="panel settings-panel matrix-audio-settings"><div><p class="eyebrow">MATRIX SETTINGS</p><h2>Audio</h2><p>The soundtrack keeps playing while you move around the Studio. Come back here whenever you want to change it.</p></div><div class="matrix-audio-settings-controls"><div class="matrix-audio-settings-row"><button class="matrix-audio-btn" type="button" data-matrix-audio="prev" aria-label="Previous track">◀</button><button class="matrix-audio-btn primary" type="button" data-matrix-audio="toggle">Play</button><button class="matrix-audio-btn" type="button" data-matrix-audio="next" aria-label="Next track">▶</button><label><span>MUSIC</span><input data-matrix-audio="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(matrixAudioPrefs().volume)||38))+'" aria-label="Soundtrack volume"></label></div><div class="matrix-audio-settings-row"><button class="matrix-audio-btn matrix-sfx-toggle" type="button" data-matrix-sfx="toggle" aria-pressed="'+(matrixSfxPrefs().enabled?'true':'false')+'">'+(matrixSfxPrefs().enabled?'SFX on':'SFX off')+'</button><label><span>SFX</span><input data-matrix-sfx="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(matrixSfxPrefs().volume)||34))+'" aria-label="Sound effects volume"></label></div></div></section>':'')+(selected.id==='starwars'?'<section class="panel settings-panel starwars-audio-settings"><div><p class="eyebrow">STAR WARS SETTINGS</p><h2>Original Trilogy audio</h2><p>Only the classic themes from <em>A New Hope</em>, <em>The Empire Strikes Back</em>, and <em>Return of the Jedi</em> are in this rotation. Music keeps going while you move around the Studio and pauses when you leave this theme.</p></div><div class="starwars-audio-settings-controls"><div class="starwars-audio-settings-row"><button class="starwars-audio-btn" type="button" data-starwars-audio="prev" aria-label="Previous track">◀</button><button class="starwars-audio-btn primary" type="button" data-starwars-audio="toggle">'+(starWarsYTPlaying?'Pause':'Play')+'</button><button class="starwars-audio-btn" type="button" data-starwars-audio="next" aria-label="Next track">▶</button><label><span>MUSIC</span><input data-starwars-audio="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(starWarsAudioPrefs().volume)||42))+'" aria-label="Star Wars soundtrack volume"></label></div><div class="starwars-sfx-row"><button class="starwars-audio-btn starwars-sfx-toggle '+(starWarsSfxPrefs().enabled?'on':'')+'" type="button" data-starwars-sfx="toggle" aria-pressed="'+(starWarsSfxPrefs().enabled?'true':'false')+'">'+(starWarsSfxPrefs().enabled?'SFX on':'SFX off')+'</button><label><span>SFX</span><input data-starwars-sfx="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(starWarsSfxPrefs().volume)||34))+'" aria-label="Star Wars sound effects volume"></label></div><div class="starwars-sfx-row"><button class="starwars-audio-btn starwars-sfx-toggle '+(starWarsSfxPrefs().ambient?'on':'')+'" type="button" data-starwars-sfx="ambient" aria-pressed="'+(starWarsSfxPrefs().ambient?'true':'false')+'">'+(starWarsSfxPrefs().ambient?'Ambience on':'Ambience off')+'</button><label><span>AMBIENCE</span><input data-starwars-sfx="intensity" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(starWarsSfxPrefs().intensity)??48))+'" aria-label="Star Wars ambient frequency"></label></div><div class="starwars-sfx-row"><button class="starwars-audio-btn starwars-sfx-toggle '+(starWarsSfxPrefs().voices?'on':'')+'" type="button" data-starwars-sfx="voices" aria-pressed="'+(starWarsSfxPrefs().voices?'true':'false')+'">'+(starWarsSfxPrefs().voices?'Voices on':'Voices off')+'</button><span class="starwars-audio-note" data-starwars-sfx-status role="status" aria-live="polite">Tap Enable audio to start the soundscape</span></div><div class="starwars-sfx-row"><button class="starwars-audio-btn" type="button" data-starwars-sfx="enable">Enable audio</button><button class="starwars-audio-btn" type="button" data-starwars-sfx="sample-blaster">Preview blaster</button><button class="starwars-audio-btn" type="button" data-starwars-sfx="sample-saber">Preview saber</button><button class="starwars-audio-btn" type="button" data-starwars-sfx="sample-voice">Preview voice</button><button class="starwars-audio-btn" type="button" data-starwars-sfx="retry">Retry audio</button></div></div><p class="starwars-audio-note"><span data-starwars-track>Original Trilogy classics</span> · John Williams / London Symphony Orchestra. Playback starts only after you tap Play.</p><p class="starwars-audio-note">Tap Enable audio once to start the soundscape. A low engine hum sits beneath changing blasters, TIE passes, droids, lightsabers, and explosions. Voices adds a film line every 24–54 seconds and lowers the other audio while it plays. Preview buttons let you try each sound right away. Sound effects pause when you hide the page or leave this theme. Exact quote searches still work as Easter eggs.</p></section>':'')+
  '<div class="theme-grid">'+THEMES.map(t=>'<button class="theme-card" data-action="theme" data-theme-id="'+t.id+'" aria-pressed="'+(state.theme===t.id)+'"><span class="theme-preview" aria-hidden="true" style="'+Object.entries(t.variables).map(([k,v])=>esc(k+':'+v+';')).join('')+'"><span class="theme-mini-side"><i></i><i></i><i></i><i></i></span><span class="theme-mini-main"><span class="theme-mini-top"><strong>Learn it. Try it. Come back anytime.</strong><i></i></span><span class="theme-mini-cards"><i></i><i></i><i></i><i></i></span></span></span><span class="theme-caption"><span>'+esc(t.name)+'<span class="theme-type">'+esc(ATMOSPHERES[t.id][1])+'</span></span>'+icon(state.theme===t.id?'check':'palette')+'</span></button>').join('')+'</div>';
 };
 
@@ -1704,54 +1704,144 @@ const STARWARS_CLASSICS=[
 const STARWARS_YT_IDS=STARWARS_CLASSICS.map(t=>t.id);
 const STARWARS_AUDIO_PREF_KEY='namiya-starwars-audio-v2';
 const STARWARS_SFX_PREF_KEY='namiya-starwars-sfx-v1';
-let starWarsYTPlayer=null,starWarsYTReady=false,starWarsYTLoading=false,starWarsYTPlaying=false,starWarsYTApiPromise=null,starWarsSfxCtx=null;
+let starWarsYTPlayer=null,starWarsYTReady=false,starWarsYTPlaying=false,starWarsYTApiPromise=null,starWarsSfxCtx=null;
 function starWarsAudioPrefs(){try{return Object.assign({volume:42},JSON.parse(localStorage.getItem(STARWARS_AUDIO_PREF_KEY)||'{}'));}catch(e){return{volume:42};}}
 function saveStarWarsAudioPrefs(patch){const next=Object.assign(starWarsAudioPrefs(),patch||{});try{localStorage.setItem(STARWARS_AUDIO_PREF_KEY,JSON.stringify(next));}catch(e){}return next;}
 function starWarsSfxPrefs(){try{return Object.assign({enabled:true,volume:34,ambient:true,intensity:48,voices:true},JSON.parse(localStorage.getItem(STARWARS_SFX_PREF_KEY)||'{}'));}catch(e){return{enabled:true,volume:34,ambient:true,intensity:48,voices:true};}}
 function saveStarWarsSfxPrefs(patch){const next=Object.assign(starWarsSfxPrefs(),patch||{});try{localStorage.setItem(STARWARS_SFX_PREF_KEY,JSON.stringify(next));}catch(e){}updateStarWarsSfxUI();return next;}
 function updateStarWarsSfxUI(){const pref=starWarsSfxPrefs();document.querySelectorAll('[data-starwars-sfx="toggle"]').forEach(b=>{b.textContent=pref.enabled?'SFX on':'SFX off';b.classList.toggle('on',pref.enabled);b.setAttribute('aria-pressed',pref.enabled?'true':'false');});document.querySelectorAll('[data-starwars-sfx="ambient"]').forEach(b=>{b.textContent=pref.ambient?'Ambience on':'Ambience off';b.classList.toggle('on',pref.ambient);b.setAttribute('aria-pressed',pref.ambient?'true':'false');});document.querySelectorAll('[data-starwars-sfx="voices"]').forEach(b=>{b.textContent=pref.voices?'Voices on':'Voices off';b.classList.toggle('on',pref.voices);b.setAttribute('aria-pressed',pref.voices?'true':'false');});document.querySelectorAll('[data-starwars-sfx="volume"]').forEach(r=>{if(document.activeElement!==r)r.value=Math.max(0,Math.min(100,Number(pref.volume)||0));});document.querySelectorAll('[data-starwars-sfx="intensity"]').forEach(r=>{if(document.activeElement!==r)r.value=Math.max(0,Math.min(100,Number(pref.intensity)||0));});}
-const STARWARS_SFX_MANIFEST='./resources/sw-sfx/archives.json';
-const STARWARS_SFX_CURATED_ARCHIVE='./resources/star-wars-theme-sfx-curated.zip';
-const STARWARS_SFX_FALLBACK_ARCHIVE='./resources/sw-ultimate-sfx-collection.zip';
-let starWarsZipLib=null,starWarsZipReaders=[],starWarsZipEntries=[],starWarsZipPromise=null,starWarsBanks=null,starWarsLibraryState='idle',starWarsLibraryError='',starWarsAmbientTimer=null,starWarsRareTimer=null,starWarsVoiceTimer=null,starWarsLastAmbient='',starWarsLastRare='',starWarsLastAmbientCategory='',starWarsQuoteIndex=new Map(),starWarsRecent=new Map();
+const STARWARS_SFX_MANIFEST='./resources/sw-audio/sounds.json?v=11';
+let starWarsZipEntries=[],starWarsLibraryPromise=null,starWarsBanks=null;
+let starWarsLibraryState='idle',starWarsLibraryError='',starWarsPlaybackError='';
+let starWarsAmbientTimer=null,starWarsRareTimer=null,starWarsVoiceTimer=null;
+let starWarsLastAmbientCategory='',starWarsGeneration=0,starWarsScheduleGeneration=0;
+const starWarsQuoteIndex=new Map(),starWarsRecent=new Map();
+const starWarsAudioCache=new Map(),starWarsAudioPending=new Map(),starWarsActiveAudio=new Set();
+let starWarsCacheBytes=0,starWarsBed=null;
 function setStarWarsLibraryStatus(message){document.querySelectorAll('[data-starwars-sfx-status]').forEach(el=>el.textContent=message);}
-function starWarsLibraryStatus(){if(starWarsLibraryState==='ready'&&starWarsBanks){const sounds=starWarsZipEntries.filter(e=>!e.directory&&/\\.wav$/i.test(e.filename)).length,voices=starWarsBanks.voiceLines?.length||0,ambient=(starWarsBanks.ambientBed?.length||0)+(starWarsBanks.ambientRandom?.length||0),battle=(starWarsBanks.battleLight?.length||0)+(starWarsBanks.battleHeavy?.length||0)+(starWarsBanks.impact?.length||0);return 'Connected · '+sounds+' sounds · '+voices+' voices · '+ambient+' ambience · '+battle+' battle';}if(starWarsLibraryState==='error')return 'Sound library unavailable · fallback cues active';if(starWarsLibraryState==='loading')return 'Loading Star Wars sound library…';return 'Tap SFX or Voices to load sound library';}
-const starWarsAudioCache=new Map(),starWarsActiveAudio=new Set();
-function loadZipJs(){if(window.zip?.ZipReader)return Promise.resolve(window.zip);if(window.__namiZipJsPromise)return window.__namiZipJsPromise;window.__namiZipJsPromise=new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/@zip.js/zip.js@2.8.2/dist/zip-full.min.js';s.async=true;s.onload=()=>resolve(window.zip);s.onerror=reject;document.head.appendChild(s);});return window.__namiZipJsPromise;}
-function swEntryMatch(entries,re,reject=null){return entries.filter(e=>!e.directory&&/\.wav$/i.test(e.filename)&&re.test(e.filename)&&(!reject||!reject.test(e.filename)));}
-function buildStarWarsBanks(entries){const heavy=/Cannon|Turret|Superlaser|Turbolaser|AT-AT|Ion Cannon|Heavy Cannon|Hoth Cannon/i;return{uiClick:swEntryMatch(entries,/Beeps and Telemetry\/(?:Beep|Button|TIE Target Comp|Alarm Beep)/i),uiNav:swEntryMatch(entries,/Beeps and Telemetry\/(?:Beep|Button|TIE Target Comp|Hoth Control Room)/i),positive:swEntryMatch(entries,/(?:Droids\/(?:R2-D2\/Chatter|BB-8\/BB-8 Chatter)|Beeps and Telemetry\/(?:Beep|Button))/i),negative:swEntryMatch(entries,/(?:Alarm|R2-D2\/Damaged|R2 Shutdown|Blaster Dry Fire|Cracking Impact|Crash Scrape|Droid Clank)/i),ambientBed:swEntryMatch(entries,/(?:Beeps and Telemetry\/Hoth Control Room|Misc\/(?:Commlink Chatter|Hangar PA Chatter))/i),ambientRandom:swEntryMatch(entries,/(?:Droids\/(?:R2-D2\/Chatter|BB-8\/BB-8 Chatter|B1 Battle Droid)|Impacts and Explosions\/Droid Clank)/i),flight:swEntryMatch(entries,/(?:TIE Laser Pass|Asteroid Pass|Impacts and Explosions\/(?:Whooshes|Whistling EXPL))/i),battleLight:swEntryMatch(entries,/Weapons\/Blasters and Cannons\//i,heavy),battleHeavy:swEntryMatch(entries,/(?:Weapons\/Blasters and Cannons\/.*(?:Cannon|Turret|Superlaser|Turbolaser|AT-AT|Ion Cannon|Heavy Cannon|Hoth Cannon)|Impacts and Explosions\/(?:.*EXPL|Burning Starfighter|Ship Crash|Snowspeeder Crash))/i),impact:swEntryMatch(entries,/Impacts and Explosions\/(?:Ricochets|.*Impact|Hull Hit|Deflector Hit|Droid Clank|STRMTRPR Clank|STRMTRPR Fall)/i),pa:swEntryMatch(entries,/(?:Misc\/(?:Commlink Chatter|Hangar PA Chatter)|Film Quotes\/(?:Rebels|Imperials)\/.*\/(?:All wings, report in|Fighters, coming in|Watch out, squad|Give me regular reports|Maybe it's another drill|Move along|Open the blast doors|The shield is down|The shield is still up|Target, maximum firepower|All troops will debark))/i),saberOn:swEntryMatch(entries,/Weapons\/Lightsabers\/Ignitions/i),saberOff:swEntryMatch(entries,/Weapons\/Lightsabers\/Deactivations/i),saberHit:swEntryMatch(entries,/Weapons\/Lightsabers\/Strikes/i),saberMove:swEntryMatch(entries,/Weapons\/Lightsabers\/Swings/i),droids:swEntryMatch(entries,/Droids\/(?:R2-D2|BB-8|B1 Battle Droid)/i),vader:swEntryMatch(entries,/Characters\/Darth Vader\//i),rare:swEntryMatch(entries,/(?:Characters\/Darth Vader\/|Characters\/Boba Fett|Wilhelm Screams\/Wilhelm Scream|Beeps and Telemetry\/Ewok Horns)/i),quotes:swEntryMatch(entries,/Film Quotes\//i),voiceLines:swEntryMatch(entries,/Film Quotes\//i).filter(e=>{const n=e.filename.split('/').pop().replace(/\.wav$/i,'').trim();return n.length>5&&!/^\(/.test(n);})};}
-async function initStarWarsUltimate(){
- if(starWarsBanks){starWarsLibraryState='ready';setStarWarsLibraryStatus(starWarsLibraryStatus());return starWarsBanks;}
- if(starWarsZipPromise)return starWarsZipPromise;
- starWarsLibraryState='loading';starWarsLibraryError='';setStarWarsLibraryStatus(starWarsLibraryStatus());
- const timeout=new Promise((_,reject)=>setTimeout(()=>reject(new Error('Star Wars sound library timed out')),20000));
- const load=(async()=>{
-  starWarsZipLib=await loadZipJs();
-  let archiveUrls=[];
-  try{const response=await fetch(STARWARS_SFX_MANIFEST,{cache:'no-store'});if(response.ok){const manifest=await response.json();archiveUrls=(manifest.archives||[]).map(item=>'./resources/sw-sfx/'+(typeof item==='string'?item:item.file)).filter(Boolean);}}catch(e){}
-  if(!archiveUrls.length)archiveUrls=[STARWARS_SFX_CURATED_ARCHIVE];
-  const loaded=[];
-  for(const url of archiveUrls){const reader=new starWarsZipLib.ZipReader(new starWarsZipLib.HttpReader(url));starWarsZipReaders.push(reader);loaded.push(await reader.getEntries());}
-  starWarsZipEntries=loaded.flat();
-  if(!starWarsZipEntries.length)throw new Error('Star Wars archive contained no entries');
-  starWarsBanks=buildStarWarsBanks(starWarsZipEntries);
-  const useful=(starWarsBanks.voiceLines?.length||0)+(starWarsBanks.ambientBed?.length||0)+(starWarsBanks.ambientRandom?.length||0)+(starWarsBanks.battleLight?.length||0)+(starWarsBanks.battleHeavy?.length||0);
-  if(!useful&&archiveUrls[0]!==STARWARS_SFX_FALLBACK_ARCHIVE){for(const reader of starWarsZipReaders.splice(0)){try{await reader.close();}catch(e){}}const reader=new starWarsZipLib.ZipReader(new starWarsZipLib.HttpReader(STARWARS_SFX_FALLBACK_ARCHIVE));starWarsZipReaders.push(reader);starWarsZipEntries=await reader.getEntries();starWarsBanks=buildStarWarsBanks(starWarsZipEntries);}
-  starWarsQuoteIndex.clear();
-  (starWarsBanks.quotes||[]).forEach(e=>{const name=e.filename.split('/').pop().replace(/\.wav$/i,''),key=normalizeStarWarsQuote(name);if(key&&!starWarsQuoteIndex.has(key))starWarsQuoteIndex.set(key,e);});
-  starWarsLibraryState='ready';setStarWarsLibraryStatus(starWarsLibraryStatus());return starWarsBanks;
- })();
- starWarsZipPromise=Promise.race([load,timeout]).catch(e=>{console.warn('Star Wars SFX archive unavailable',e);starWarsBanks=null;starWarsLibraryState='error';starWarsLibraryError=String(e?.message||e);starWarsQuoteIndex.clear();setStarWarsLibraryStatus(starWarsLibraryStatus());return null;}).finally(()=>{if(starWarsLibraryState!=='loading')starWarsZipPromise=null;});
- return starWarsZipPromise;
+function starWarsLibraryStatus(){
+ const pref=starWarsSfxPrefs();
+ if(!pref.enabled)return 'Sound effects off';
+ if(starWarsPlaybackError)return starWarsPlaybackError;
+ if(starWarsLibraryState==='error')return 'Could not load sounds. Tap Retry audio.';
+ if(starWarsLibraryState==='loading')return 'Loading sound list…';
+ if(starWarsLibraryState==='ready'&&starWarsBanks){
+  if(starWarsSfxCtx?.state!=='running')return 'Sounds ready · tap Enable audio';
+  if(!Number(pref.volume))return 'Sound effects volume is at zero';
+  return 'Ready · '+starWarsZipEntries.length+' sounds · '+starWarsBanks.voiceLines.length+' voice lines';
+ }
+ return 'Tap Enable audio to start the soundscape';
 }
-function starWarsAudioContext(){if(!starWarsSfxCtx){const C=window.AudioContext||window.webkitAudioContext;if(C)starWarsSfxCtx=new C();}if(starWarsSfxCtx?.state==='suspended')starWarsSfxCtx.resume().catch(()=>{});return starWarsSfxCtx;}
-function starWarsTone(ctx,type,f0,f1,start,duration,gain,dest){const o=ctx.createOscillator(),g=ctx.createGain();o.type=type;o.frequency.setValueAtTime(f0,start);if(f1)o.frequency.exponentialRampToValueAtTime(Math.max(20,f1),start+duration);g.gain.setValueAtTime(.0001,start);g.gain.exponentialRampToValueAtTime(Math.max(.0002,gain),start+.008);g.gain.exponentialRampToValueAtTime(.0001,start+duration);o.connect(g);g.connect(dest);o.start(start);o.stop(start+duration+.02);}
-function playStarWarsFallback(name){const ctx=starWarsAudioContext();if(!ctx)return;const pref=starWarsSfxPrefs(),now=ctx.currentTime,master=ctx.createGain();master.gain.value=Math.max(0,Math.min(.7,(Number(pref.volume)||0)/100*.45));master.connect(ctx.destination);if(name==='saber_off'||name==='saber_on'){const down=name==='saber_off';starWarsTone(ctx,'sawtooth',down?180:48,down?42:190,now,.42,.30,master);starWarsTone(ctx,'sine',down?95:52,down?38:105,now,.5,.20,master);return;}if(name==='rethink'){starWarsTone(ctx,'square',330,180,now,.12,.13,master);return;}if(name==='complete'||name==='strong'){starWarsTone(ctx,'sine',620,1100,now,.13,.17,master);return;}if(name==='confirm'){starWarsTone(ctx,'square',620,900,now,.07,.16,master);starWarsTone(ctx,'sine',980,1320,now+.065,.09,.13,master);return;}if(name==='nav'){starWarsTone(ctx,'square',760,420,now,.08,.12,master);return;}starWarsTone(ctx,'square',880,1080,now,.045,.10,master);}
-function swPick(list,bank='default'){if(!list?.length)return null;const recent=starWarsRecent.get(bank)||[],keep=Math.min(36,Math.max(5,Math.floor(list.length*.45))),pool=list.filter(e=>!recent.includes(e.filename)),source=pool.length?pool:list,entry=source[Math.floor(Math.random()*source.length)]||list[0];starWarsRecent.set(bank,[entry.filename,...recent.filter(x=>x!==entry.filename)].slice(0,keep));return entry;}
-async function swEntryUrl(entry){if(!entry||!starWarsZipLib)return null;if(starWarsAudioCache.has(entry.filename)){const url=starWarsAudioCache.get(entry.filename);starWarsAudioCache.delete(entry.filename);starWarsAudioCache.set(entry.filename,url);return url;}const blob=await entry.getData(new starWarsZipLib.BlobWriter('audio/wav'));const url=URL.createObjectURL(blob);starWarsAudioCache.set(entry.filename,url);while(starWarsAudioCache.size>36){const [old,urlOld]=starWarsAudioCache.entries().next().value;starWarsAudioCache.delete(old);URL.revokeObjectURL(urlOld);}return url;}
-async function swPlayEntry(entry,scale=1,duck=false){if(!entry||!state||state.theme!=='starwars')return false;const pref=starWarsSfxPrefs();if(!pref.enabled)return false;try{const url=await swEntryUrl(entry);if(!url)return false;const a=new Audio(url);const base=(Number(pref.volume)||0)/100;a.volume=Math.max(0,Math.min(1,base*scale*(starWarsYTPlaying?.68:1)));starWarsActiveAudio.add(a);let restore=null;if(duck&&starWarsYTPlayer&&starWarsYTReady&&starWarsYTPlaying){try{const mv=Math.max(0,Math.min(100,Number(starWarsAudioPrefs().volume)||42));starWarsYTPlayer.setVolume(Math.max(8,Math.round(mv*.3)));restore=()=>{try{starWarsYTPlayer.setVolume(mv);}catch(e){}};}catch(e){}}a.onended=()=>{starWarsActiveAudio.delete(a);restore?.();};a.onerror=()=>{starWarsActiveAudio.delete(a);restore?.();};const p=a.play();if(p&&p.catch)await p.catch(e=>{starWarsActiveAudio.delete(a);restore?.();throw e;});return true;}catch(e){return false;}}
-async function playStarWarsBank(bank,scale=1,duck=false){const banks=await initStarWarsUltimate();const list=banks?.[bank];if(!list?.length)return false;return swPlayEntry(swPick(list,bank),scale,duck);}function swWeightedChoice(options){const total=options.reduce((sum,o)=>sum+o[1],0);let r=Math.random()*total;for(const o of options){r-=o[1];if(r<=0)return o;}return options[options.length-1];}
-async function playStarWarsSfx(name,force=false){if(!state||state.theme!=='starwars')return;const pref=starWarsSfxPrefs();if(!pref.enabled&&!force)return;const map={click:[['uiClick',9,.5,false],['droids',1,.26,false]],nav:[['uiNav',8,.52,false],['droids',2,.25,false]],confirm:[['positive',6,.58,false],['droids',3,.32,false],['saberOn',1,.38,false]],rethink:[['negative',7,.5,false],['impact',2,.28,false],['uiNav',1,.4,false]],complete:[['positive',5,.66,false],['droids',2,.38,false],['saberOn',2,.5,false],['saberHit',1,.32,false]],strong:[['saberHit',6,.45,false],['saberMove',3,.34,false],['positive',1,.52,false]],saber_on:[['saberOn',1,.74,false]],saber_off:[['saberOff',1,.72,false]],powerup:[['saberOn',4,.52,false],['battleHeavy',2,.3,false],['uiNav',2,.42,false],['droids',1,.28,false]],door:[['uiNav',5,.42,false],['pa',2,.27,true],['impact',1,.22,false]],blaster:[['battleLight',1,.42,false]],cannon:[['battleHeavy',1,.45,false]],flyby:[['flight',1,.36,false]],droid1:[['droids',1,.4,false]],droid2:[['droids',1,.36,false]],alien:[['droids',3,.28,false],['rare',1,.24,true]],flourish:[['saberMove',1,.4,false]]};const cfg=swWeightedChoice(map[name]||map.click),ok=await playStarWarsBank(cfg[0],cfg[2],cfg[3]);if(!ok)playStarWarsFallback(name);}
+function refreshStarWarsStatus(){setStarWarsLibraryStatus(starWarsLibraryStatus());}
+async function swFetch(url,type){
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
+ try{const response=await fetch(url,{signal:controller.signal});if(!response.ok)throw new Error('Audio request failed ('+response.status+')');return await response[type]();}
+ finally{clearTimeout(timer);}
+}
+function swEntryMatch(entries,re,reject=null){return entries.filter(e=>!e.directory&&/\.wav$/i.test(e.filename)&&re.test(e.filename)&&(!reject||!reject.test(e.filename.split('/').pop())));}
+function buildStarWarsBanks(entries){const heavy=/Cannon|Turret|Superlaser|Turbolaser|AT-AT|Ion Cannon|Heavy Cannon|Hoth Cannon/i;return{uiClick:swEntryMatch(entries,/Beeps and Telemetry\/(?:Beep|Button|TIE Target Comp|Alarm Beep)/i),uiNav:swEntryMatch(entries,/Beeps and Telemetry\/(?:Beep|Button|TIE Target Comp|Hoth Control Room)/i),positive:swEntryMatch(entries,/(?:Droids\/(?:R2-D2\/Chatter|BB-8\/BB-8 Chatter)|Beeps and Telemetry\/(?:Beep|Button))/i),negative:swEntryMatch(entries,/(?:Alarm|R2-D2\/Damaged|R2 Shutdown|Blaster Dry Fire|Cracking Impact|Crash Scrape|Droid Clank)/i),ambientBed:swEntryMatch(entries,/(?:Beeps and Telemetry\/Hoth Control Room|Misc\/(?:Commlink Chatter|Hangar PA Chatter))/i),ambientRandom:swEntryMatch(entries,/(?:Droids\/(?:R2-D2\/Chatter|BB-8\/BB-8 Chatter|B1 Battle Droid)|Impacts and Explosions\/Droid Clank)/i),flight:swEntryMatch(entries,/(?:TIE Laser Pass|Asteroid Pass|Impacts and Explosions\/(?:Whooshes|Whistling EXPL))/i),battleLight:swEntryMatch(entries,/Weapons\/Blasters and Cannons\//i,heavy),battleHeavy:swEntryMatch(entries,/(?:Weapons\/Blasters and Cannons\/.*(?:Cannon|Turret|Superlaser|Turbolaser|AT-AT|Ion Cannon|Heavy Cannon|Hoth Cannon)|Impacts and Explosions\/(?:.*EXPL|Burning Starfighter|Ship Crash|Snowspeeder Crash))/i),impact:swEntryMatch(entries,/Impacts and Explosions\/(?:Ricochets|.*Impact|Hull Hit|Deflector Hit|Droid Clank|STRMTRPR Clank|STRMTRPR Fall)/i),pa:swEntryMatch(entries,/(?:Misc\/(?:Commlink Chatter|Hangar PA Chatter)|Film Quotes\/(?:Rebels|Imperials)\/.*\/(?:All wings, report in|Fighters, coming in|Watch out, squad|Give me regular reports|Maybe it's another drill|Move along|Open the blast doors|The shield is down|The shield is still up|Target, maximum firepower|All troops will debark))/i),saberOn:swEntryMatch(entries,/Weapons\/Lightsabers\/Ignitions/i),saberOff:swEntryMatch(entries,/Weapons\/Lightsabers\/Deactivations/i),saberHit:swEntryMatch(entries,/Weapons\/Lightsabers\/Strikes/i),saberMove:swEntryMatch(entries,/Weapons\/Lightsabers\/Swings/i),droids:swEntryMatch(entries,/Droids\/(?:R2-D2|BB-8|B1 Battle Droid)/i),vader:swEntryMatch(entries,/Characters\/Darth Vader\//i),rare:swEntryMatch(entries,/(?:Characters\/Darth Vader\/|Characters\/Boba Fett|Wilhelm Screams\/Wilhelm Scream|Beeps and Telemetry\/Ewok Horns)/i),quotes:swEntryMatch(entries,/Film Quotes\//i),voiceLines:swEntryMatch(entries,/Film Quotes\//i).filter(e=>{const n=e.filename.split('/').pop().replace(/\.wav$/i,'').trim();return n.length>5&&!/^\(/.test(n);})};}
+
+async function initStarWarsUltimate(){
+ if(starWarsBanks)return starWarsBanks;
+ if(starWarsLibraryPromise)return starWarsLibraryPromise;
+ starWarsLibraryState='loading';starWarsLibraryError='';refreshStarWarsStatus();
+ starWarsLibraryPromise=(async()=>{
+  try{
+   const manifest=await swFetch(STARWARS_SFX_MANIFEST,'json');
+   if(manifest.version!==1||!Array.isArray(manifest.entries))throw new Error('Invalid sound list');
+   const entries=manifest.entries.filter(e=>typeof e.filename==='string'&&/^[a-f0-9]{24}\.wav$/.test(e.file)).map(e=>({...e,url:'./resources/sw-audio/'+e.file}));
+   const banks=buildStarWarsBanks(entries);
+   if(!banks.battleLight.length||!banks.saberOn.length||!banks.voiceLines.length||!banks.ambientBed.length)throw new Error('Sound list is incomplete');
+   starWarsZipEntries=entries;starWarsBanks=banks;
+   starWarsQuoteIndex.clear();
+   banks.quotes.forEach(e=>{const key=normalizeStarWarsQuote(e.filename.split('/').pop().replace(/\.wav$/i,''));if(key&&!starWarsQuoteIndex.has(key))starWarsQuoteIndex.set(key,e);});
+   starWarsLibraryState='ready';return banks;
+  }catch(error){starWarsLibraryState='error';starWarsLibraryError=String(error.message||error);return null;}
+  finally{starWarsLibraryPromise=null;refreshStarWarsStatus();}
+ })();
+ return starWarsLibraryPromise;
+}
+function starWarsAudioContext(){
+ if(!starWarsSfxCtx){const C=window.AudioContext||window.webkitAudioContext;if(C){starWarsSfxCtx=new C();starWarsSfxCtx.onstatechange=()=>{refreshStarWarsStatus();if(starWarsSfxCtx.state==='running')scheduleStarWarsAmbience();};}}
+ // Resume synchronously from a click/key gesture, before any network await.
+ if(starWarsSfxCtx?.state==='suspended')starWarsSfxCtx.resume().catch(()=>{starWarsPlaybackError='Tap Enable audio to allow playback';refreshStarWarsStatus();});
+ return starWarsSfxCtx;
+}
+function swIsVoice(entry){return /Film Quotes\/|Misc\/(?:Commlink Chatter|Hangar PA Chatter)/i.test(entry?.filename||'');}
+function swCanPlay(channel='effect',entry=null){
+ const pref=starWarsSfxPrefs();
+ return state?.theme==='starwars'&&!document.hidden&&pref.enabled&&Number(pref.volume)>0&&starWarsSfxCtx?.state==='running'&&
+  (channel!=='voice'||pref.voices)&&(channel!=='ambient'||pref.ambient)&&(!swIsVoice(entry)||pref.voices);
+}
+function swUpdateMix(){
+ const pref=starWarsSfxPrefs(),base=Math.max(0,Math.min(1,Number(pref.volume)/100||0));
+ const speaking=[...starWarsActiveAudio].some(a=>a.voice);
+ for(const a of starWarsActiveAudio)a.gain.gain.setTargetAtTime(base*a.scale*(a.voice?1:(speaking?.45:1)),starWarsSfxCtx.currentTime,.05);
+ if(starWarsBed)starWarsBed.gain.gain.setTargetAtTime(base*(speaking?.075:.16),starWarsSfxCtx.currentTime,.15);
+ if(starWarsYTPlayer&&starWarsYTReady){try{const volume=Math.max(0,Math.min(100,Number(starWarsAudioPrefs().volume)||0));starWarsYTPlayer.setVolume(speaking?volume*.3:volume);}catch(e){}}
+}
+function swStopAudio(channel=null){
+ // Invalidate all pending playback; a late fetch must never unmute the theme.
+ starWarsGeneration++;
+ for(const a of [...starWarsActiveAudio])if(!channel||a.channel===channel||(channel==='voice'&&a.voice)){try{a.source.stop();}catch(e){}a.cleanup();}
+ if((!channel||channel==='ambient')&&starWarsBed){const bed=starWarsBed;starWarsBed=null;try{bed.source.stop();}catch(e){}bed.source.disconnect();bed.filter.disconnect();bed.gain.disconnect();}
+ swUpdateMix();
+}
+function swStartBed(){
+ if(starWarsBed||!swCanPlay('ambient'))return;
+ const ctx=starWarsSfxCtx,buffer=ctx.createBuffer(1,ctx.sampleRate*3,ctx.sampleRate),data=buffer.getChannelData(0);
+ let last=0;for(let i=0;i<data.length;i++){last=(last+Math.random()*.04-.02)/1.02;data[i]=last*3.5;}
+ const source=ctx.createBufferSource(),filter=ctx.createBiquadFilter(),gain=ctx.createGain();
+ source.buffer=buffer;source.loop=true;filter.type='lowpass';filter.frequency.value=420;gain.gain.value=0;
+ source.connect(filter);filter.connect(gain);gain.connect(ctx.destination);starWarsBed={source,filter,gain};source.start();swUpdateMix();
+}
+function swPick(list,bank='default'){
+ if(!list?.length)return null;
+ const recent=starWarsRecent.get(bank)||[],keep=Math.min(list.length-1,36,Math.max(5,Math.floor(list.length*.45)));
+ const pool=list.filter(e=>!recent.slice(0,keep).includes(e.filename)),source=pool.length?pool:list;
+ const entry=source[Math.floor(Math.random()*source.length)];
+ starWarsRecent.set(bank,[entry.filename,...recent.filter(x=>x!==entry.filename)].slice(0,keep));return entry;
+}
+async function swEntryBuffer(entry){
+ if(starWarsAudioCache.has(entry.file)){const buffer=starWarsAudioCache.get(entry.file);starWarsAudioCache.delete(entry.file);starWarsAudioCache.set(entry.file,buffer);return buffer;}
+ if(starWarsAudioPending.has(entry.file))return starWarsAudioPending.get(entry.file);
+ const pending=(async()=>{
+  const bytes=await swFetch(entry.url,'arrayBuffer');
+  const buffer=await starWarsSfxCtx.decodeAudioData(bytes);
+  starWarsAudioCache.set(entry.file,buffer);starWarsCacheBytes+=buffer.length*buffer.numberOfChannels*4;
+  while(starWarsAudioCache.size>40||starWarsCacheBytes>24*1024*1024){const [key,old]=starWarsAudioCache.entries().next().value;starWarsAudioCache.delete(key);starWarsCacheBytes-=old.length*old.numberOfChannels*4;}
+  return buffer;
+ })().finally(()=>starWarsAudioPending.delete(entry.file));
+ starWarsAudioPending.set(entry.file,pending);return pending;
+}
+async function swPlayEntry(entry,scale=1,duck=false,channel=swIsVoice(entry)?'voice':'effect'){
+ if(!entry||!swCanPlay(channel,entry))return false;
+ const generation=starWarsGeneration;
+ try{
+  const buffer=await swEntryBuffer(entry);
+  if(generation!==starWarsGeneration||!swCanPlay(channel,entry))return false;
+  const voice=swIsVoice(entry)||channel==='voice';
+  if(voice&&[...starWarsActiveAudio].some(a=>a.voice))return false;
+  if(starWarsActiveAudio.size>=5)return false;
+  const source=starWarsSfxCtx.createBufferSource(),gain=starWarsSfxCtx.createGain();
+  source.buffer=buffer;gain.gain.value=0;source.connect(gain);gain.connect(starWarsSfxCtx.destination);
+  const audio={source,gain,scale,voice,channel,cleanup:()=>{starWarsActiveAudio.delete(audio);source.disconnect();gain.disconnect();swUpdateMix();}};
+  source.onended=audio.cleanup;starWarsActiveAudio.add(audio);swUpdateMix();source.start();
+  starWarsPlaybackError='';refreshStarWarsStatus();
+  document.dispatchEvent(new CustomEvent('starwars-audio-play',{detail:{filename:entry.filename,channel,duration:buffer.duration}}));
+  return true;
+ }catch(error){if(generation===starWarsGeneration&&swCanPlay(channel,entry)){starWarsPlaybackError='Could not play a clip. Tap Retry audio.';refreshStarWarsStatus();}return false;}
+}
+async function playStarWarsBank(bank,scale=1,duck=false,channel=bank==='voiceLines'?'voice':'effect'){
+ if(!swCanPlay(channel))return false;
+ const generation=starWarsGeneration,banks=await initStarWarsUltimate();
+ if(generation!==starWarsGeneration||!swCanPlay(channel))return false;
+ const list=banks?.[bank]?.filter(e=>starWarsSfxPrefs().voices||!swIsVoice(e));
+ if(!list?.length)return false;
+ return swPlayEntry(swPick(list,bank),scale,duck,channel);
+}
+function swWeightedChoice(options){const total=options.reduce((sum,o)=>sum+o[1],0);let r=Math.random()*total;for(const o of options){r-=o[1];if(r<=0)return o;}return options[options.length-1];}
+async function playStarWarsSfx(name){if(!state||state.theme!=='starwars')return;const pref=starWarsSfxPrefs();if(!pref.enabled)return;const map={click:[['uiClick',9,.5,false],['droids',1,.26,false]],nav:[['uiNav',8,.52,false],['droids',2,.25,false]],confirm:[['positive',6,.58,false],['droids',3,.32,false],['saberOn',1,.38,false]],rethink:[['negative',7,.5,false],['impact',2,.28,false],['uiNav',1,.4,false]],complete:[['positive',5,.66,false],['droids',2,.38,false],['saberOn',2,.5,false],['saberHit',1,.32,false]],strong:[['saberHit',6,.45,false],['saberMove',3,.34,false],['positive',1,.52,false]],saber_on:[['saberOn',1,.74,false]],saber_off:[['saberOff',1,.72,false]],powerup:[['saberOn',4,.52,false],['battleHeavy',2,.3,false],['uiNav',2,.42,false],['droids',1,.28,false]],door:[['uiNav',5,.42,false],['pa',2,.27,true],['impact',1,.22,false]],blaster:[['battleLight',1,.42,false]],cannon:[['battleHeavy',1,.45,false]],flyby:[['flight',1,.36,false]],droid1:[['droids',1,.4,false]],droid2:[['droids',1,.36,false]],alien:[['droids',3,.28,false],['rare',1,.24,true]],flourish:[['saberMove',1,.4,false]]};const cfg=swWeightedChoice(map[name]||map.click);await playStarWarsBank(cfg[0],cfg[2],cfg[3]);}
 function playStarWarsGradeSfx(grade){const g=String(grade||'').toLowerCase();if(['best','strong','known','complete'].includes(g)){playStarWarsSfx('complete');if(Math.random()<.24)playStarWarsSfx('strong');}else if(['reasonable','workable','review'].includes(g))playStarWarsSfx('confirm');else playStarWarsSfx('rethink');}
 const STARWARS_QUOTE_EGGS={
  'its a trap':'Film Quotes/Rebels/Admiral Ackbar/It\'s a trap!.wav',
@@ -1774,24 +1864,143 @@ const STARWARS_QUOTE_EGGS={
 };
 function normalizeStarWarsQuote(q){return String(q||'').toLowerCase().normalize('NFKD').replace(/[’']/g,'').replace(/[^a-z0-9]+/g,' ').trim();}
 async function tryStarWarsQuote(q){if(!state||state.theme!=='starwars'||!starWarsSfxPrefs().enabled)return false;const key=normalizeStarWarsQuote(q);if(!key)return false;await initStarWarsUltimate();const suffix=STARWARS_QUOTE_EGGS[key],entry=(suffix&&starWarsZipEntries.find(e=>e.filename.endsWith('/'+suffix)||e.filename.endsWith(suffix)))||starWarsQuoteIndex.get(key);if(!entry)return false;const ok=await swPlayEntry(entry,.92,true);if(ok)toast('Secret transmission received.');return ok;}
-function clearStarWarsAmbience(){clearTimeout(starWarsAmbientTimer);clearTimeout(starWarsRareTimer);clearTimeout(starWarsVoiceTimer);starWarsAmbientTimer=starWarsRareTimer=starWarsVoiceTimer=null;}
-function scheduleStarWarsAmbience(){clearStarWarsAmbience();if(!state||state.theme!=='starwars'||!starWarsSfxPrefs().enabled)return;const scheduleAmbient=()=>{const pref=starWarsSfxPrefs();if(!state||state.theme!=='starwars'||!pref.enabled||!pref.ambient)return;const intensity=Math.max(0,Math.min(100,Number(pref.intensity)??48)),delay=3500+(100-intensity)*110+Math.random()*11000;starWarsAmbientTimer=setTimeout(async()=>{if(state?.theme==='starwars'&&!document.hidden&&starWarsSfxPrefs().ambient){let choices=[['ambientRandom',30,.2,false],['ambientBed',20,.18,false],['flight',17,.21,false],['pa',10,.28,true],['battleLight',10,.14,false],['impact',7,.14,false],['battleHeavy',6,.12,false]].filter(o=>o[0]!==starWarsLastAmbientCategory);const cfg=swWeightedChoice(choices);starWarsLastAmbientCategory=cfg[0];const played=await playStarWarsBank(cfg[0],Math.max(.65,cfg[2]*3.5),cfg[3]);if(!played)playStarWarsFallback('nav');if(Math.random()<.24)setTimeout(()=>{if(state?.theme==='starwars'&&!document.hidden&&starWarsSfxPrefs().ambient)playStarWarsBank(Math.random()<.6?'droids':'uiNav',.14,false);},1200+Math.random()*3600);}scheduleAmbient();},delay);};const scheduleRare=()=>{if(!state||state.theme!=='starwars'||!starWarsSfxPrefs().enabled||!starWarsSfxPrefs().ambient)return;starWarsRareTimer=setTimeout(async()=>{if(state?.theme==='starwars'&&!document.hidden&&starWarsSfxPrefs().ambient)await playStarWarsBank('rare',.22,true);scheduleRare();},110000+Math.random()*170000);};const scheduleVoice=(first=false)=>{if(!state||state.theme!=='starwars'||!starWarsSfxPrefs().enabled||!starWarsSfxPrefs().voices)return;const delay=first?2500+Math.random()*5000:22000+Math.random()*34000;starWarsVoiceTimer=setTimeout(async()=>{if(state?.theme==='starwars'&&!document.hidden&&starWarsSfxPrefs().voices)await playStarWarsBank('voiceLines',.72,true);scheduleVoice(false);},delay);};scheduleAmbient();scheduleRare();scheduleVoice(true);}
+function clearStarWarsAmbience(){
+ starWarsScheduleGeneration++;clearTimeout(starWarsAmbientTimer);clearTimeout(starWarsRareTimer);clearTimeout(starWarsVoiceTimer);
+ starWarsAmbientTimer=starWarsRareTimer=starWarsVoiceTimer=null;
+}
+function scheduleStarWarsAmbience(){
+ if(!swCanPlay()){clearStarWarsAmbience();return;}
+ swStartBed();
+ const generation=starWarsScheduleGeneration;
+ const schedule=(channel,first=false)=>{
+  if(generation!==starWarsScheduleGeneration||!swCanPlay(channel))return;
+  const intensity=Math.max(0,Math.min(100,Number(starWarsSfxPrefs().intensity)||0));
+  const delay=channel==='voice'?(first?3500:24000+Math.random()*30000):(first?650:2500+(100-intensity)*80+Math.random()*5000);
+  const timer=setTimeout(async()=>{
+   if(generation!==starWarsScheduleGeneration||!swCanPlay(channel))return;
+   if(channel==='voice')await playStarWarsBank('voiceLines',.95,true,'voice');
+   else{
+    const choices=[['ambientBed',3,.65],['ambientRandom',3,.6],['flight',3,.65],['battleLight',4,.6],['battleHeavy',2,.5],['impact',2,.55],['saberMove',2,.5],['rare',1,.45]].filter(o=>o[0]!==starWarsLastAmbientCategory);
+    const cfg=swWeightedChoice(choices);starWarsLastAmbientCategory=cfg[0];await playStarWarsBank(cfg[0],cfg[2],false,'ambient');
+   }
+   if(generation!==starWarsScheduleGeneration)return;
+   if(channel==='voice')starWarsVoiceTimer=null;else starWarsAmbientTimer=null;
+   schedule(channel);
+  },delay);
+  if(channel==='voice')starWarsVoiceTimer=timer;else starWarsAmbientTimer=timer;
+ };
+ if(!starWarsAmbientTimer&&starWarsSfxPrefs().ambient)schedule('ambient',true);
+ if(!starWarsVoiceTimer&&starWarsSfxPrefs().voices)schedule('voice',true);
+}
+async function enableStarWarsAudio(){
+ starWarsPlaybackError='';
+ const ctx=starWarsAudioContext();
+ if(!ctx){starWarsPlaybackError='Audio is not supported in this browser';refreshStarWarsStatus();return false;}
+ const banks=await initStarWarsUltimate();
+ if(!banks||!swCanPlay()){refreshStarWarsStatus();return false;}
+ scheduleStarWarsAmbience();refreshStarWarsStatus();return true;
+}
 function ensureStarWarsAudioDock(){let dock=document.getElementById('starwars-audio-dock');if(dock)return dock;dock=document.createElement('aside');dock.id='starwars-audio-dock';dock.className='starwars-audio-dock';dock.setAttribute('aria-hidden','true');dock.innerHTML='<div id="starwars-youtube-player"></div>';document.body.appendChild(dock);return dock;}
-function loadYouTubeAPI(){if(window.YT&&window.YT.Player)return Promise.resolve(window.YT);if(starWarsYTApiPromise)return starWarsYTApiPromise;starWarsYTApiPromise=new Promise((resolve,reject)=>{const previous=window.onYouTubeIframeAPIReady;window.onYouTubeIframeAPIReady=()=>{try{if(typeof previous==='function')previous();}catch(e){}resolve(window.YT);};if(!document.querySelector('script[src*="youtube.com/iframe_api"]')){const s=document.createElement('script');s.src='https://www.youtube.com/iframe_api';s.async=true;s.onerror=()=>reject(new Error('YouTube API failed to load'));document.head.appendChild(s);}setTimeout(()=>{if(window.YT&&window.YT.Player)resolve(window.YT);},3500);});return starWarsYTApiPromise;}
+let starWarsYTReadyPromise=null;
+function loadYouTubeAPI(){
+ if(window.YT?.Player)return Promise.resolve(window.YT);
+ if(starWarsYTApiPromise)return starWarsYTApiPromise;
+ starWarsYTApiPromise=new Promise((resolve,reject)=>{
+  const previous=window.onYouTubeIframeAPIReady;
+  const timer=setTimeout(()=>{script.remove();reject(new Error('Music connection timed out'));},12000);
+  const script=document.createElement('script');script.src='https://www.youtube.com/iframe_api';script.async=true;
+  window.onYouTubeIframeAPIReady=()=>{clearTimeout(timer);try{previous?.();}catch(e){}resolve(window.YT);};
+  script.onerror=()=>{clearTimeout(timer);script.remove();reject(new Error('Music connection unavailable'));};
+  document.head.appendChild(script);
+ }).catch(error=>{starWarsYTApiPromise=null;throw error;});
+ return starWarsYTApiPromise;
+}
 function updateStarWarsAudioUI(){document.querySelectorAll('[data-starwars-audio="toggle"]').forEach(b=>b.textContent=starWarsYTPlaying?'Pause':'Play');const pref=starWarsAudioPrefs();document.querySelectorAll('[data-starwars-audio="volume"]').forEach(r=>{if(document.activeElement!==r)r.value=Math.max(0,Math.min(100,Number(pref.volume)||0));});if(starWarsYTPlayer&&starWarsYTReady){try{const data=starWarsYTPlayer.getVideoData?.(),found=STARWARS_CLASSICS.find(t=>t.id===data?.video_id);document.querySelectorAll('[data-starwars-track]').forEach(el=>el.textContent=found?.title||data?.title||'Original Trilogy classics');}catch(e){}}updateStarWarsSfxUI();}
-async function initStarWarsYouTube(){if(starWarsYTPlayer&&starWarsYTReady)return starWarsYTPlayer;if(starWarsYTLoading)return null;starWarsYTLoading=true;ensureStarWarsAudioDock();try{await loadYouTubeAPI();if(starWarsYTPlayer)return starWarsYTPlayer;starWarsYTPlayer=new window.YT.Player('starwars-youtube-player',{height:'1',width:'1',videoId:STARWARS_YT_IDS[0],playerVars:{playlist:STARWARS_YT_IDS.join(','),playsinline:1,controls:0,rel:0,disablekb:1},events:{onReady:e=>{starWarsYTReady=true;e.target.setVolume(Math.max(0,Math.min(100,Number(starWarsAudioPrefs().volume)||42)));updateStarWarsAudioUI();},onStateChange:e=>{starWarsYTPlaying=e.data===window.YT.PlayerState.PLAYING;updateStarWarsAudioUI();}}});return starWarsYTPlayer;}catch(e){document.querySelectorAll('[data-starwars-track]').forEach(el=>el.textContent='Couldn’t load YouTube right now');return null;}finally{starWarsYTLoading=false;}}
-function syncStarWarsAudioUI(){ensureStarWarsAudioDock();const isStarWars=state&&state.theme==='starwars';updateStarWarsAudioUI();if(isStarWars)setStarWarsLibraryStatus(starWarsLibraryStatus());if(!isStarWars&&starWarsYTPlayer&&starWarsYTReady&&starWarsYTPlaying){try{starWarsYTPlayer.pauseVideo();}catch(e){}starWarsYTPlaying=false;updateStarWarsAudioUI();}if(isStarWars&&(starWarsSfxPrefs().ambient||starWarsSfxPrefs().voices)&&!starWarsAmbientTimer&&!starWarsVoiceTimer){starWarsAudioContext();scheduleStarWarsAmbience();initStarWarsUltimate().then(()=>{if(state?.theme==='starwars')scheduleStarWarsAmbience();});}if(!isStarWars)clearStarWarsAmbience();}
-async function handleStarWarsAudioAction(action){playStarWarsSfx(action==='toggle'?'confirm':'nav');const player=await initStarWarsYouTube();if(!player)return;const run=()=>{try{if(action==='toggle'){const s=player.getPlayerState();if(s===window.YT.PlayerState.PLAYING)player.pauseVideo();else player.playVideo();}else if(action==='next')player.nextVideo();else if(action==='prev')player.previousVideo();}catch(e){}};if(starWarsYTReady)run();else setTimeout(run,700);}
+async function initStarWarsYouTube(){
+ if(starWarsYTPlayer&&starWarsYTReady)return starWarsYTPlayer;
+ if(starWarsYTReadyPromise)return starWarsYTReadyPromise;
+ ensureStarWarsAudioDock();
+ document.querySelectorAll('[data-starwars-track]').forEach(el=>el.textContent='Connecting music…');
+ starWarsYTReadyPromise=(async()=>{
+  await loadYouTubeAPI();
+  return new Promise((resolve,reject)=>{
+   const timer=setTimeout(()=>reject(new Error('Music player timed out')),12000);
+   starWarsYTPlayer=new window.YT.Player('starwars-youtube-player',{height:'1',width:'1',videoId:STARWARS_YT_IDS[0],playerVars:{playlist:STARWARS_YT_IDS.join(','),playsinline:1,controls:0,rel:0,disablekb:1},events:{
+    onReady:event=>{clearTimeout(timer);starWarsYTReady=true;swUpdateMix();updateStarWarsAudioUI();resolve(event.target);},
+    onStateChange:event=>{starWarsYTPlaying=event.data===window.YT.PlayerState.PLAYING;updateStarWarsAudioUI();},
+    onError:()=>{clearTimeout(timer);document.querySelectorAll('[data-starwars-track]').forEach(el=>el.textContent='Track unavailable · try Next');reject(new Error('Track unavailable'));}
+   }});
+  });
+ })().catch(()=>{
+  starWarsYTReady=false;starWarsYTPlaying=false;
+  try{starWarsYTPlayer?.destroy();}catch(e){}starWarsYTPlayer=null;
+  const dock=ensureStarWarsAudioDock();dock.innerHTML='<div id="starwars-youtube-player"></div>';
+  document.querySelectorAll('[data-starwars-track]').forEach(el=>el.textContent='Music unavailable · tap Play to retry');return null;
+ }).finally(()=>{starWarsYTReadyPromise=null;});
+ return starWarsYTReadyPromise;
+}
+function syncStarWarsAudioUI(){
+ ensureStarWarsAudioDock();updateStarWarsAudioUI();refreshStarWarsStatus();
+ if(state?.theme!=='starwars'){
+  clearStarWarsAmbience();swStopAudio();
+  if(starWarsYTPlayer&&starWarsYTReady){try{starWarsYTPlayer.pauseVideo();}catch(e){}starWarsYTPlaying=false;}
+ }else if(swCanPlay())scheduleStarWarsAmbience();
+}
+async function handleStarWarsAudioAction(action){
+ playStarWarsSfx(action==='toggle'?'confirm':'nav');
+ const player=await initStarWarsYouTube();if(!player||state?.theme!=='starwars')return;
+ try{if(action==='toggle'){if(player.getPlayerState()===window.YT.PlayerState.PLAYING)player.pauseVideo();else player.playVideo();}else if(action==='next')player.nextVideo();else if(action==='prev')player.previousVideo();}catch(e){}
+}
 document.addEventListener('click',e=>{const el=e.target.closest('[data-starwars-audio]');if(!el||el.matches('input'))return;handleStarWarsAudioAction(el.dataset.starwarsAudio);});
-document.addEventListener('input',e=>{if(e.target?.dataset?.starwarsAudio!=='volume')return;const volume=Math.max(0,Math.min(100,Number(e.target.value)||0));saveStarWarsAudioPrefs({volume});if(starWarsYTPlayer&&starWarsYTReady){try{starWarsYTPlayer.setVolume(volume);}catch(err){}}});
-document.addEventListener('click',e=>{const el=e.target.closest('[data-starwars-sfx]');if(!el||el.matches('input'))return;const pref=starWarsSfxPrefs();if(el.dataset.starwarsSfx==='toggle'){saveStarWarsSfxPrefs({enabled:!pref.enabled});if(!pref.enabled){playStarWarsSfx('confirm',true);initStarWarsUltimate();scheduleStarWarsAmbience();}else clearStarWarsAmbience();}if(el.dataset.starwarsSfx==='ambient'){saveStarWarsSfxPrefs({ambient:!pref.ambient});playStarWarsSfx('nav',true);scheduleStarWarsAmbience();}if(el.dataset.starwarsSfx==='voices'){const turningOn=!pref.voices;saveStarWarsSfxPrefs({voices:turningOn});playStarWarsSfx('confirm',true);if(turningOn){starWarsAudioContext();initStarWarsUltimate().then(banks=>{if(banks&&state?.theme==='starwars'){scheduleStarWarsAmbience();playStarWarsBank('voiceLines',.72,true);}});}else scheduleStarWarsAmbience();}});
-document.addEventListener('input',e=>{if(e.target?.dataset?.starwarsSfx==='volume')saveStarWarsSfxPrefs({volume:Math.max(0,Math.min(100,Number(e.target.value)||0))});if(e.target?.dataset?.starwarsSfx==='intensity'){saveStarWarsSfxPrefs({intensity:Math.max(0,Math.min(100,Number(e.target.value)||0))});scheduleStarWarsAmbience();}});
+document.addEventListener('input',e=>{if(e.target?.dataset?.starwarsAudio!=='volume')return;const volume=Math.max(0,Math.min(100,Number(e.target.value)||0));saveStarWarsAudioPrefs({volume});swUpdateMix();});
+document.addEventListener('click',async e=>{
+ const el=e.target.closest('[data-starwars-sfx]');if(!el||el.matches('input'))return;
+ const action=el.dataset.starwarsSfx,pref=starWarsSfxPrefs();
+ if(action==='toggle'){
+  saveStarWarsSfxPrefs({enabled:!pref.enabled});
+  if(pref.enabled){clearStarWarsAmbience();swStopAudio();}else if(await enableStarWarsAudio())playStarWarsSfx('confirm');
+ }else if(action==='ambient'||action==='voices'){
+  const field=action==='voices'?'voices':'ambient';saveStarWarsSfxPrefs({[field]:!pref[field]});
+  clearStarWarsAmbience();swStopAudio(action==='voices'?'voice':'ambient');
+  if(!pref[field]&&pref.enabled&&await enableStarWarsAudio()){
+   if(action==='voices')playStarWarsBank('voiceLines',.95,true,'voice');
+   else playStarWarsBank('flight',.7,false,'ambient');
+  }
+  scheduleStarWarsAmbience();
+ }else if(action==='enable'||action==='retry'){
+  saveStarWarsSfxPrefs({enabled:true});if(await enableStarWarsAudio())playStarWarsSfx('saber_on');
+ }else if(action.startsWith('sample-')){
+  if(!pref.enabled){starWarsPlaybackError='Turn SFX on to preview sounds';refreshStarWarsStatus();return;}
+  const bank={'sample-blaster':'battleLight','sample-saber':'saberOn','sample-voice':'voiceLines'}[action];
+  if(bank==='voiceLines'&&!pref.voices){starWarsPlaybackError='Turn Voices on to preview dialogue';refreshStarWarsStatus();return;}
+  if(bank&&await enableStarWarsAudio()){if(bank==='voiceLines')swStopAudio('voice');await playStarWarsBank(bank,.95,bank==='voiceLines');}
+ }
+ refreshStarWarsStatus();
+});
+document.addEventListener('input',e=>{
+ const action=e.target?.dataset?.starwarsSfx;
+ if(action==='volume'){saveStarWarsSfxPrefs({volume:Math.max(0,Math.min(100,Number(e.target.value)||0))});swUpdateMix();if(!Number(e.target.value)){clearStarWarsAmbience();swStopAudio();}else scheduleStarWarsAmbience();refreshStarWarsStatus();}
+ if(action==='intensity'){saveStarWarsSfxPrefs({intensity:Math.max(0,Math.min(100,Number(e.target.value)||0))});clearStarWarsAmbience();scheduleStarWarsAmbience();}
+});
 const starWarsBaseApplyTheme=applyTheme;
-applyTheme=function(id){const was=state&&state.theme,leaving=was==='starwars'&&id!=='starwars',entering=was!=='starwars'&&id==='starwars';if(leaving){playStarWarsSfx('saber_off');clearStarWarsAmbience();}starWarsBaseApplyTheme(id);syncStarWarsAudioUI();if(entering){starWarsAudioContext();scheduleStarWarsAmbience();initStarWarsUltimate().then(()=>{if(state&&state.theme==='starwars'){playStarWarsSfx('saber_on');scheduleStarWarsAmbience();}});}};
-document.addEventListener('pointerdown',()=>{
- if(state?.theme==='starwars'){starWarsAudioContext();if(starWarsLibraryState==='idle'||starWarsLibraryState==='error')initStarWarsUltimate();}
-},{passive:true}); document.addEventListener('click',e=>{if(!state||state.theme!=='starwars')return;const el=e.target.closest('button,a[href^="#"],summary');if(!el||el.disabled||el.matches('[data-starwars-audio],[data-starwars-sfx],[data-action="theme"],[data-action="answer"],[data-story="answer"],[data-action="rate-card"],[data-action="lesson-done"]'))return;const href=el.getAttribute('href')||'';if(/^#simulation\//.test(href))playStarWarsSfx('powerup');else if(/^#story\//.test(href))playStarWarsSfx('door');else if(el.matches('.btn.primary'))playStarWarsSfx('confirm');else if(el.matches('a[href^="#"]'))playStarWarsSfx('nav');else playStarWarsSfx('click');});
-
+applyTheme=function(id){
+ const entering=state?.theme!=='starwars'&&id==='starwars';
+ if(id!=='starwars'){clearStarWarsAmbience();swStopAudio();}
+ starWarsBaseApplyTheme(id);syncStarWarsAudioUI();
+ if(entering&&starWarsSfxPrefs().enabled)enableStarWarsAudio().then(ok=>{if(ok)playStarWarsSfx('saber_on');});
+};
+function unlockStarWarsAudio(){if(state?.theme==='starwars'&&starWarsSfxPrefs().enabled)enableStarWarsAudio();}
+document.addEventListener('pointerdown',unlockStarWarsAudio,{passive:true});
+document.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')unlockStarWarsAudio();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){clearStarWarsAmbience();swStopAudio();}else if(swCanPlay())scheduleStarWarsAmbience();});
+window.addEventListener('pagehide',()=>{clearStarWarsAmbience();swStopAudio();});
+document.addEventListener('click',e=>{
+ if(state?.theme!=='starwars')return;
+ const el=e.target.closest('button,a[href^="#"],summary');
+ if(!el||el.disabled||el.matches('[data-starwars-audio],[data-starwars-sfx],[data-action="theme"],[data-action="answer"],[data-story="answer"],[data-action="rate-card"],[data-action="lesson-done"]'))return;
+ const href=el.getAttribute('href')||'';
+ if(/^#simulation\//.test(href))playStarWarsSfx('powerup');else if(/^#story\//.test(href))playStarWarsSfx('door');else if(el.matches('.btn.primary'))playStarWarsSfx('confirm');else if(el.matches('a[href^="#"]'))playStarWarsSfx('nav');else playStarWarsSfx('click');
+});
 
 document.addEventListener('click',e=>{const el=e.target.closest('[data-matrix-sfx]');if(!el||el.matches('input'))return;if(el.dataset.matrixSfx==='toggle'){const pref=matrixSfxPrefs();saveMatrixSfxPrefs({enabled:!pref.enabled});if(!pref.enabled)playMatrixSfx('nav');}});
 document.addEventListener('input',e=>{if(e.target?.dataset?.matrixSfx!=='volume')return;saveMatrixSfxPrefs({volume:Math.max(0,Math.min(100,Number(e.target.value)||0))});});

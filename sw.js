@@ -1,5 +1,5 @@
-const CACHE = 'nami-learning-studio-2026-10-01-v10-split-sfx';
-const SHELL = './index.html?v=10';
+const CACHE = 'nami-learning-studio-2026-10-05-v11-direct-audio';
+const SHELL = './index.html?v=11';
 const CORE = [
   SHELL,
   './manifest.webmanifest',
@@ -24,7 +24,7 @@ self.addEventListener('activate', (event) => {
     caches
       .keys()
       .then((keys) =>
-        Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key))),
+        Promise.all(keys.filter((key) => key.startsWith('nami-learning-studio-') && key !== CACHE).map((key) => caches.delete(key))),
       )
       .then(() => self.clients.claim()),
   );
@@ -35,6 +35,10 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
+
+  // Audio uses normal HTTP caching and a bounded decoded-buffer cache. Avoid
+  // retaining every visited WAV indefinitely in service-worker storage.
+  if (url.pathname.includes('/resources/sw-audio/')) return;
 
   // Let HTTP range requests go straight to the network. The Star Wars SFX archive
   // depends on byte ranges and should never be stored as a partial Cache API entry.

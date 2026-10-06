@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.netlify/
+public/resources/sw-audio/
+test-results/

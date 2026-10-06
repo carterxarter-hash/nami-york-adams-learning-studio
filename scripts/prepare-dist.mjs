@@ -21,6 +21,10 @@ const copyFile = (source, destination) => {
 copyFile('sw.js', 'dist/sw.js');
 copyFile('manifest.webmanifest', 'dist/manifest.webmanifest');
 
+// The source ZIPs stay in Git for rebuilds; production serves extracted clips.
+fs.rmSync(path.join(dist, 'resources/sw-sfx'), { recursive: true, force: true });
+fs.rmSync(path.join(dist, 'resources/starwars-embedded-sfx.js'), { force: true });
+
 const iconsSource = path.join(root, 'icons');
 const iconsDestination = path.join(dist, 'icons');
 if (!fs.existsSync(iconsSource)) {
