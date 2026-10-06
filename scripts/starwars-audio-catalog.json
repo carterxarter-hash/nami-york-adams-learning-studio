@@ -1,0 +1,3785 @@
+{
+  "version": 2,
+  "entries": [
+    {
+      "filename": "Ambience/(Chuckling).wav",
+      "file": "de472c08dfeccf0e5c35e548.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/(Coughing 1).wav",
+      "file": "1abf3ff70573f878d89ce052.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/(Coughing 2).wav",
+      "file": "d1327359d521066738747229.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/(Death).wav",
+      "file": "889b2fab42e3201adcc74407.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/(Laughing).wav",
+      "file": "164dfb19b3f7fbe71f8cf257.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/(Laughter 1).wav",
+      "file": "7441230f80f8db94fa3b4cc0.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/(Laughter 2).wav",
+      "file": "2e08e10f22419a72da2b87de.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/(Marching).wav",
+      "file": "0717963f07127242cd8d5111.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/(Water cooler chat).wav",
+      "file": "4d6a94a2c426af3220271251.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/...but you are not a Jedi yet..wav",
+      "file": "255cd0a83979e368377ed104.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/A Jedi craves not these things!.wav",
+      "file": "777264158d63061da16c1ebd.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/A Jedi uses the Force for knowledge and defense..wav",
+      "file": "1782bde345546c54a13b3321.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/A Sith Lord!.wav",
+      "file": "003ed665c94422b15b5fc4a6.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/AAAAGH!.wav",
+      "file": "5bda11d95149332c53a257b6.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Ahhh..!.wav",
+      "file": "fd371f7258a5477b80278ff1.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Alright, men. Load your weapons..wav",
+      "file": "64abfa929ae3bc70de9e32f3.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Alright, old buddy!.wav",
+      "file": "ef5da2f5afa2ff7c5d05425a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Alright..wav",
+      "file": "462f341055cf60708185f206.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Always with you, it cannot be done..wav",
+      "file": "cb2be91a2b0539b6aea3c370.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/And now, I sense you wish to continue your search....wav",
+      "file": "80ea4517a072a687dea90d4e.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/And now, your highness....wav",
+      "file": "21cd8526b39fc0845c99b5ab.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/And....wav",
+      "file": "5fe09b1a1ee83a3736478074.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Another happy landing..wav",
+      "file": "de81332740e0bdb42cb385d8.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Apology accepted..wav",
+      "file": "374b29bcde14aeb517888fa0.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Are you sure....wav",
+      "file": "f429a12db110aef5c3985440.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Aren't you a little short for a stormtrooper....wav",
+      "file": "1bd1da41179c156d47731244.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/As you wish..wav",
+      "file": "860be5e8e89b18fe087f2db0.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/At last, we will have revenge..wav",
+      "file": "1dad2b8be58d2cb6adc7d2b0.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/At last, we will reveal ourselves to the Jedi..wav",
+      "file": "1cd34ffc98e8a3626e431c15.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Away, put your weapon!!.wav",
+      "file": "6dd8c76ea963dbb82ea776d9.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Blaster Fight 1.wav",
+      "file": "5971781ecdcb53875d0768bf.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/BOOM!.wav",
+      "file": "910c2035690ac48b5ce467c1.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Boy....wav",
+      "file": "5a8050c899c943a865406896.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/But beware of the Dark Side!.wav",
+      "file": "d85aeda470ca42d88282e2f2.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/But I was going to the Toche station....wav",
+      "file": "58f1506b3bdfd124282d3575.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/But they're gonna kill her!.wav",
+      "file": "d09c766e721a7c96cc218a4a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Buzz droids!.wav",
+      "file": "5e17df55a5c4cbfac5e321fd.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/C'mon, Han ol' buddy. Don't let me down..wav",
+      "file": "9d1fad1e2f27499842ffba01.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Charming, to the last..wav",
+      "file": "54ca94d3b61204c51d8b833d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/CHEWIE, GET US OUTTA HERE!.wav",
+      "file": "f97be4afa725054e3f4d7696.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Come here, my little friend..wav",
+      "file": "92cde1e9528e1c1cad5184f8.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Come on, let's keep a little optimism here.wav",
+      "file": "b051e6719a03d260630066ac.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Come to your senses!.wav",
+      "file": "c1c5c81ee4ad2e3c6c10a33b.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Commlink Chatter.wav",
+      "file": "d9d9381a76ccf69d5ad55016.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Count me in..wav",
+      "file": "af96b5a0b6bda700a3c6366d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Curious..wav",
+      "file": "0d46a8dcf6b87c8441e2e4c4.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Dagobah..wav",
+      "file": "4c369ce229ab28032fc54065.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Darth Vader/Vader Breath Fast 1.wav",
+      "file": "dc821c48e967ff6254c849ea.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Darth Vader/Vader Exhale 1A.wav",
+      "file": "4b671e70a83a9f6216b56373.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Darth Vader/Vader Exhale 2.wav",
+      "file": "17c528a68366548097726873.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Darth Vader/Vader Inhale 1A.wav",
+      "file": "c1ee21e14fb0180a46defb11.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Darth Vader, only you could be so bold..wav",
+      "file": "b2daf6821fdb47acf0ba5f31.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Do you know what's going on....wav",
+      "file": "9d93e5cf1d9ac4ea02cfb98b.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Don't ask me to do that..wav",
+      "file": "40430f7d474cee471a4d2612.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Don't be too proud of this technological terror....wav",
+      "file": "06c505d1ef03753e92cb227c.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Don't everybody thank me at once..wav",
+      "file": "68435eaf336a9d8c1ff89317.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Don't get excited!.wav",
+      "file": "9899f66a8b66292647a24419.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Don't give in to hate! That leads to the Dark Side..wav",
+      "file": "e1a8ddaa44104adc74b2723d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Don't try it!.wav",
+      "file": "de6bb0040bc6883ad35f697f.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Don't worry..wav",
+      "file": "2538a56447c2316bb1e617f3.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Eat, hehehe! Eat!.wav",
+      "file": "5987b0579d0bcff538d0b23d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Evacuate! In our moment of triumph..!.wav",
+      "file": "f2cbcba1875068e04d9823c4.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Everything's perfectly alright now....wav",
+      "file": "0c9e1b8efc9da472f73796e2.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Ewok Horns 1.wav",
+      "file": "04d890b75504ac096065178b.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Fear of this battlestation..wav",
+      "file": "26ea796006a45146d732b0dd.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Fear..wav",
+      "file": "6a30d5714b4dfb85bfb52b30.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Fighters, coming in!.wav",
+      "file": "1167e3aef5adbf6bcab52571.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Follow me!.wav",
+      "file": "706f72dc62ba3a0041e02b74.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/For 800 years, have I trained Jedi..wav",
+      "file": "26b8fcbd788bd07ab0f5a8ef.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/For my ally is the Force....wav",
+      "file": "3d5f2c57c4089d68e8f546fb.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/For your own good, stay out of this affair..wav",
+      "file": "2caef7a35819d7a08f5a2c06.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/From now on, you do as I tell you..wav",
+      "file": "80bd5f6a9e051826563ef7d3.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Generic Alarm 2D.wav",
+      "file": "86d8a38f2f5a813a37559ab2.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/GET IN THERE YOU BIG, FURRY OAF!.wav",
+      "file": "296c3fe2c02952046c916f4c.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Give the evacuation code signal!.wav",
+      "file": "3fda907f46235d55636240c0.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Good luck..wav",
+      "file": "ff795b611427abd7c66b4798.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Good morning! Nice of you guys to drop by!.wav",
+      "file": "8740a55d43333d760323b146.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Good, our first catch of the day..wav",
+      "file": "09c80d372d12fd56b148a743.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Han Solo. I'm captain of the Millennium Falcon..wav",
+      "file": "4e495be85474e2789573874a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Hangar PA Chatter.wav",
+      "file": "e707369aa5c935f3094963b4.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/He's all yours, bounty hunter..wav",
+      "file": "fc00e4370cead05f8e5da4f7.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/He's more machine now, than man....wav",
+      "file": "91a6682e81f1ba81a3f38abc.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Hello there!.wav",
+      "file": "5c91cd2bbedfb3c889a1b02e.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Hello, what have we here....wav",
+      "file": "59f9638a488b7480c42a1f4c.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/HELP ME!.wav",
+      "file": "e3b2787a5a3cb8425473b13f.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Help me, Obi-Wan Kenobi. You're my only hope..wav",
+      "file": "08328e787bdef6e031dda9a7.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Help you, I can! Yes! Mmm!.wav",
+      "file": "2f6d49f02b6ddd47fae5016a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Here goes nothing!.wav",
+      "file": "031b746536f02dca7e147e22.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Here they come!.wav",
+      "file": "f542898052b94b1f3c77a594.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Here, everything is soft... and smooth..wav",
+      "file": "b78292f9e3c24afee2a077dc.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Hey, it's me!.wav",
+      "file": "4787c7fca82758d204af66ef.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Hm..wav",
+      "file": "af5288a9525bdf16a4597226.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Hokey religions and ancient weapons....wav",
+      "file": "22ebffaeadab9e3917231011.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Hoth Control Room.wav",
+      "file": "083a8c75b890795cfa63eb80.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/How can you do this!.wav",
+      "file": "b614de53cd664b06376c471d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/How could you know my father!.wav",
+      "file": "36fd8af55058f579b4e84d55.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/How long have you had these droids....wav",
+      "file": "faaa2b2091aca0074a099549.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/How ya doin, ya old pirate!.wav",
+      "file": "fbda049a81c78fb4d3b48edd.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Huh... I thought they smelled bad on the outside!.wav",
+      "file": "4f12cf6b974ab6f39d864a65.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I am a Jedi, like my father before me..wav",
+      "file": "6b0f63f0e85d56e1ec5b395d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I am altering the deal. Pray I don't alter it any further..wav",
+      "file": "27d2880775769e04c3e844b4.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I am going to end this, once and for all!.wav",
+      "file": "2811318b68b4c959a0352067.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I am wondering... why are you here....wav",
+      "file": "950cac66463fbba6149f4118.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I am your father..wav",
+      "file": "53c5bd1e6e58382e0d628746.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I can arrange that!.wav",
+      "file": "1e333217cf6d94916f2d4234.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I cannot interfere..wav",
+      "file": "7220982d30717464bfafa679.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I do not believe the Sith could've returned....wav",
+      "file": "66caf2ff3efc9a15c076145a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I don't even know what I'm doing here!.wav",
+      "file": "d2c1414b7dfe54a5477b9bc8.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I don't know what you're talking about..wav",
+      "file": "c6bb501995f1990f4fd51c42.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I don't know where you get your delusions, laser-brain..wav",
+      "file": "399f36791780fff96fc06b64.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I don't know who you are, or where you came from..wav",
+      "file": "217f2a25313e6d893afaf0e7.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I don't know. I have a bad feeling about this..wav",
+      "file": "55ff8e17254d877b2905f018.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I don't know... fly casual..wav",
+      "file": "addc8f8f6f514f87bdc79b45.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I don't like this..wav",
+      "file": "8be367c0aca6da26249534a2.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I don't think so..wav",
+      "file": "c9dba325c44eefa6c6c004ae.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I don't trust him..wav",
+      "file": "b611e08221f129f0f94a198e.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I feel I could take on the whole Empire myself!.wav",
+      "file": "376a548f31c5198a19513012.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I feel the conflict within you, let go of your hate!.wav",
+      "file": "1a8161b94c60226a2e2f2a44.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I find your lack of faith disturbing..wav",
+      "file": "0d50ad0e64587368af129834.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I got a bad feeling about this....wav",
+      "file": "c4ef72ea92a43ca4fc68de28.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I grow tired of asking this, so it'll be the last time..wav",
+      "file": "af3e2f7edda65474d8672584.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I had nothing to do with it..wav",
+      "file": "2b2852188891c6bfd2873830.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I happen to like nice men....wav",
+      "file": "6e7f7bfff64a8a03494f9e29.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I have you now!.wav",
+      "file": "d20e95439a642b0382cd81bf.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I know what you mean..wav",
+      "file": "40c240a2c718eb2d2d5f8afa.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I know..wav",
+      "file": "1caa8030b11e890e7b86843c.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I like the sound of that....wav",
+      "file": "3fbc7ba8f7122a300f6d92a8.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I love you!.wav",
+      "file": "34005ffc24f53d88dcc08328.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I love you..wav",
+      "file": "918108802d6a6d0a63ae2eab.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I recognized your foul stench....wav",
+      "file": "0c5f49fc8504ad5cde29fb7a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I see it, Wedge! Good work!.wav",
+      "file": "db1651caa01a4787e63b2bc9.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I shouldn't have done that....wav",
+      "file": "722314f2da32f857b2f363ff.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I take it back!.wav",
+      "file": "3a6b02b856f2c8afb90f9954.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I think you overestimate their chances!.wav",
+      "file": "ca20d49788e8f1acf6a76028.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I thought that we had decided not to fall in love..wav",
+      "file": "0819a0b605f9ffc796aa9b22.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I understand..wav",
+      "file": "f56d83f79060a80f9b869684.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I want more..wav",
+      "file": "0b476bef3ca7570d7db1484f.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I want to know what happened to the plans....wav",
+      "file": "17272c76ce03ab10db6e288b.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I want to learn the ways of the Force....wav",
+      "file": "324f79a58ea82d6bb1bf0545.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I was beginning to wonder if you'd got my message..wav",
+      "file": "c8a43b6db22ddee37b6d7f1c.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I will be the most powerful Jedi ever..wav",
+      "file": "af6b273ab5469596d511e4f3.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I will not fight you, father..wav",
+      "file": "4f2eaf88b30ae050ebc31f72.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I will not turn, and you'll be forced to kill me..wav",
+      "file": "afe2588f575e607af6484da7.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I wonder if your feelings on this matter are clear..wav",
+      "file": "9246cb34f4bfd5e70c696280.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I would like you to be my guest at a ceremony....wav",
+      "file": "bb048d03cd0ac8993ef963bf.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I'd just as soon kiss a wookiee!.wav",
+      "file": "a262650213b0763a2dda502d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I'll Take Them Myself!.wav",
+      "file": "93571a5d5d55b14403383e71.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I'm getting too old for this sort of thing..wav",
+      "file": "a9c3d01aaba80656dffb98bb.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I'm looking for someone..wav",
+      "file": "dd82b10cf06318803dc6bc7d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I'm not afraid..wav",
+      "file": "b28bfb1b48497d5bc9993b4a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I'm not goin' anywhere!.wav",
+      "file": "25e7a38318cc55b56705fcda.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I'm not trembling....wav",
+      "file": "e8941485b4a99df95bc21ba4.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I'm sorry..wav",
+      "file": "5e89a5128fb2445f539419a5.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I'm trying to reach Lando Calrissian!.wav",
+      "file": "e51de0315040ed417ef0c967.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I've been arrogant, and I apologize..wav",
+      "file": "95614bea8b496c3c2d035f59.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I've given up trying to argue with you..wav",
+      "file": "c7c78314fc80648bd97084d4.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I've got work to do..wav",
+      "file": "1306ad636c8296047e35171d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/I've outrun Imperial starships..wav",
+      "file": "a7de5d86bd514ca3c0c82fef.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/If the trace was correct....wav",
+      "file": "5e7a817c8d7eb66a511a655b.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/If they find us, they will crush us....wav",
+      "file": "ed023be7cc72f10d35a63fe5.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/If what you've told me is true....wav",
+      "file": "5401460be4991dc53c30d5b9.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/If you are suffering as much as I am....wav",
+      "file": "0251a3177ab4f42e4fade2fc.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/If you strike me down, I shall become more powerful....wav",
+      "file": "c72ee31a274b3080a9e286c1.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Asteroid Pass.wav",
+      "file": "bb8bf629dddef56706f92d81.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Battle Droid EXPL.wav",
+      "file": "eff78c05238d8bfa39ece4ea.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Burning Starfighter 1A.wav",
+      "file": "6a4ad937693740eb01404045.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Burning Starfighter 1B.wav",
+      "file": "cfa5aa79839a76ba4b18664e.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Cracking Impact.wav",
+      "file": "02be6db2ba6731be3f112ede.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Crash Scrape 1.wav",
+      "file": "b14627827d05c4cd839492d9.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Crunchy EXPL 9.wav",
+      "file": "4db2965d7b4227909070fa32.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Debris EXPL 3L.wav",
+      "file": "bf4e24f6fcb4cc2cc35ec160.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Deflector Hit 1A.wav",
+      "file": "6cfabd01ac53f2ba30ade3d4.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Deflector Hit 2.wav",
+      "file": "9685a2e370cd68585d640397.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Droid Clank 1.wav",
+      "file": "6c647bfdc4f218d0a4811b1e.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Droid Clank 2.wav",
+      "file": "9227bf8fc3d5baa3a51362a2.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Droid Clank 3.wav",
+      "file": "7b7e12bb0061cfbd46e70dcd.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/DS Surface Hit 1A.wav",
+      "file": "4b464252a069bb4e26abcc87.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/DS Surface Hit 2.wav",
+      "file": "b75edc395c3e52b37f924345.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Fighter EXPL 4B.wav",
+      "file": "9efa53fc454a9d9bb7021db0.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Fighter EXPL 7B.wav",
+      "file": "9fdab75079df47606df3458b.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Fighter EXPL 8.wav",
+      "file": "24c39fac2938a1530864374c.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Firey EXPL 1B.wav",
+      "file": "7e83a4190f4c35a9f892639e.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Firey EXPL 4B.wav",
+      "file": "b8a6fdaf47951f8e3fe544b6.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flak EXPL 11A.wav",
+      "file": "8fb6c1c668ac5110d376a807.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flak EXPL 11B.wav",
+      "file": "bfba630da0af28943a8a4ccb.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flak EXPL 1B.wav",
+      "file": "38e1b9313b03e6ad2f6fcae7.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flange EXPL 1C.wav",
+      "file": "8b5a6a64110880506af96eb1.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flange EXPL 2.wav",
+      "file": "554c6bc069ddb56d09f4a449.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flange EXPL 3.wav",
+      "file": "0132a68e4fb0796ccb5d9351.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flange EXPL 4C.wav",
+      "file": "2cdc56170435381b363ac6df.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flange EXPL 4D.wav",
+      "file": "c2c2f015cdc673205d170a10.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flange EXPL 4E.wav",
+      "file": "d8ecba65e0d27c9428b736e8.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flange EXPL 9.wav",
+      "file": "c37001d337b94297aa82c5a4.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flange Impact 2.wav",
+      "file": "125deb625b6d804c82f86387.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Flange Impact 3.wav",
+      "file": "98077a8a8831a9d8f0860ab5.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/General Impact 4B.wav",
+      "file": "c30ed0075ed1e87238c8875d.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Glass Break 1A.wav",
+      "file": "79fb5eee0d7867596d1f8000.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Hissing Impact 2.wav",
+      "file": "4f8b4a68049fb2f73f19cabe.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Hull Hit 1.WAV",
+      "file": "0fb7573c6210c3a688519c3e.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Hull Hit 2.WAV",
+      "file": "aeff35ac801c56b18dea7054.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Hull Hit 3.WAV",
+      "file": "d0398f6c6274a048f2d57720.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Large EXPL 5C.wav",
+      "file": "04b419adb1ff32ded59a4ad4.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Large EXPL 5D.wav",
+      "file": "e6f13a89208b7d20f091eec4.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Large Impact 1C.wav",
+      "file": "f203ef6ed7e223d5f34b3bc6.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Large Impact 1D.wav",
+      "file": "2c25f2661381df5422d83619.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Large Impact 3A.wav",
+      "file": "1e2fc56896c8dddf73ab8cd1.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Large Impact 5C.wav",
+      "file": "a60c8ea93d113561f9c81c04.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Metallic Impact 1A.wav",
+      "file": "dea97d1db97446306ec45f5f.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Metallic Impact 3.wav",
+      "file": "6e23787963849efca8822c0b.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Ricochets/Laser Ricochet 6A.WAV",
+      "file": "ff74515372962af9a7fb1a2a.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Ricochets/Laser Ricochet 6B.wav",
+      "file": "3eee82b7701aa9649f9a5584.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Ricochets/Projectile Ric 1.wav",
+      "file": "347a309b98021fbf76ee4aae.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Ricochets/Projectile Ric 2.wav",
+      "file": "89c1076f55e0b7e85ebf909c.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Ricochets/Projectile Ric 53.wav",
+      "file": "6200155e291c6f18f5eebbcb.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Ricochets/Projectile Ric Multi.wav",
+      "file": "a37f9b7acdaf2b967f55ecd3.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Ship Crash 1.wav",
+      "file": "d46d5af36b7188f048062ec9.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Ship Crash 2.wav",
+      "file": "ae4bb401d150c11b20cfcbfd.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Shooting EXPL 2.wav",
+      "file": "e5cdf69be10ff42b6eeb082d.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Shooting EXPL 6A.wav",
+      "file": "380dd1fbdd3bd0c2bfc062cf.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Shooting EXPL 6B.wav",
+      "file": "4bebbb44160d6756077a384b.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Snowspeeder Crash 2.wav",
+      "file": "5f1ee1b85fe473e295202766.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Snowspeeder Crash 4.wav",
+      "file": "4efec7c1ccf3eb405eeb20cd.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Space EXPL 3A.wav",
+      "file": "4484127bea6132871c20c4a7.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Space EXPL 4B.wav",
+      "file": "f7da2c933aa36819cc11183e.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Space EXPL 4C.wav",
+      "file": "fc75ca4712a3ae474746a968.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Space EXPL 6E.wav",
+      "file": "433ea880f744606f7a831ab4.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Space EXPL 6F.wav",
+      "file": "e0194a30295ff9b200557ff6.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Space EXPL 6G.wav",
+      "file": "e7238e4b749619f176329465.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Space EXPL 6J.wav",
+      "file": "5148912f387ba129409e27fc.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Space EXPL 9B.wav",
+      "file": "5adf76cbc76bb1dbf0862f8e.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking EXPL 1A.wav",
+      "file": "a1e843fdeb661e49ec5e3b48.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking EXPL 1B.wav",
+      "file": "bee981a02b187d46ab4da704.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking Impact 1A.wav",
+      "file": "e1a55ec5870be1d7540b0a15.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking Impact 1B.wav",
+      "file": "d9ccfec903f061366ba419d0.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking Impact 2A.WAV",
+      "file": "bbff0b56a9c17ea7611c42c7.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking Impact 2B.WAV",
+      "file": "6d3fcd22c9a2201637fc7cef.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking Impact 2C.wav",
+      "file": "eb3ebe0c289305514890661c.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking Impact 2D.wav",
+      "file": "880404a13300faf8e644f01c.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking Impact 3A.wav",
+      "file": "e37550147c1a5c3e78cf8a0b.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking Impact 3B.wav",
+      "file": "1b49cabbd7954772658d1b65.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking Impact 3C.wav",
+      "file": "c31d80bd57e3bada7b6d1828.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Sparking Impact 3D.wav",
+      "file": "7dce5c029b70fee2cf88cb28.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/STRMTRPR Fall 1A.wav",
+      "file": "a8edf487b4899b640a459939.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/STRMTRPR Fall 2A.wav",
+      "file": "4a05975d9f52edc5e5f4b3c0.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Whistling EXPL 1A.wav",
+      "file": "26e74c8060a4f14f1f0d8c00.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Whistling EXPL 4.wav",
+      "file": "b188d0dac2245ba2b289bcf7.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Whistling EXPL 5.wav",
+      "file": "66561fd0a365076c8c330c23.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Whistling EXPL 6.wav",
+      "file": "18bb37942ef6e620898b05a3.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Whooshes/Laser Whoosh 1A.wav",
+      "file": "392507c352a13c492f740c17.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Whooshes/Laser Whoosh 1B.wav",
+      "file": "fbe29d9334a65a06a36cd97c.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Whooshes/Laser Whoosh 1C.wav",
+      "file": "a9240cd14ca6708339e4e6f8.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Whooshes/Projectile Whoosh 1A.wav",
+      "file": "45f9bc09512a14bae6f5b5c3.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Whooshes/Projectile Whoosh 1B.wav",
+      "file": "6d88dc0d03e899486aac349f.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Impacts and Explosions/Wood EXPL.wav",
+      "file": "21bf8b2e6bd4082f3436c30d.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Intoxicating..wav",
+      "file": "b6c1c5fb2a9faf962b405f6e.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Is it possible to learn this power....wav",
+      "file": "d533b7bae4122989413d52b0.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/It's a good story..wav",
+      "file": "393b6ecaafc9d51b7b6ee5d3.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/It's a wonder you're still alive..wav",
+      "file": "c1cf237e1ad2d24acea2eb76.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/It's not over yet..wav",
+      "file": "625253239f1f2e64de3650b7.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/It's over, commander.wav",
+      "file": "edbff3132b6ef00f749926c3.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/It's them! Blast them!.wav",
+      "file": "4f9a66ea411aac2c06c76394.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/It's very dangerous..wav",
+      "file": "d9190ccf76bf5472fbf6d3eb.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Just hang on!.wav",
+      "file": "f42440a24fe4d479a2cb614d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Laugh it up, fuzzball!.wav",
+      "file": "fdbbfaf10871440dc2f4dac5.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Leia..wav",
+      "file": "cc1e1d2f6cbf1e7082cf3fdd.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Look, don't worry..wav",
+      "file": "9fb522563473ff5b14e5d866.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Look, sir. Droids!.wav",
+      "file": "9f7697ed0b0b1656b7541fb4.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Look, there!.wav",
+      "file": "c2f8b76d1340c629e371ce73.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Luke!.wav",
+      "file": "59f3052625c07753fc566448.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Luke, Trust Me!.wav",
+      "file": "21253c4f914cfbbbe0b064b5.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Luke..wav",
+      "file": "cd47e23ecf26d857f1c8aefd.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/May the Force be with us all..wav",
+      "file": "37e5fe9c614730103f22c85e.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/May the Force be with you..wav",
+      "file": "7f3662a60c565c56f586e495.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Maybe it's another drill..wav",
+      "file": "66e939ced81f9422804e8670.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Meesa busting with happiness seeing youse again!.wav",
+      "file": "50e8f6555f4ad211f149abbb.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Mos Eisley Spaceport..wav",
+      "file": "b3da277c850f02e9313f3722.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Move along, move along!.wav",
+      "file": "ab77cdc5bec9e6256eb04ef3.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Mudhole! Slimy! My HOME this is!.wav",
+      "file": "8b09ce663d97f8f11a266a6f.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/No again!.wav",
+      "file": "950e73f520b25ab1b6374e58.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/No disintegrations..wav",
+      "file": "6988718c937e71e904457cdc.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/No star system will dare oppose the Emperor now..wav",
+      "file": "deb026be99df56a4211a490b.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/No, Captain..wav",
+      "file": "5dd043eba742b4e9298650d0.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/No, I've got to save you..wav",
+      "file": "91a6a895f8ab4480e27ec705.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/No, not actually..wav",
+      "file": "a3978bc378135a27c823ac31.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/No. Not really, no..wav",
+      "file": "0b1d6591b9044aef17e230ae.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/No..wav",
+      "file": "02a5e3ce7f9e810615a184ab.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/NOOOOOOO!!!.wav",
+      "file": "d548733abb32a66b86248bc1.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Not far, Yoda not far..wav",
+      "file": "02a4b7d5922e98eed70f3335.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Now all I've gotta do is find this Yoda..wav",
+      "file": "110fac5499e5e3c6066b2807.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/OBI!!! Meesa so smiling to seeing yousa!.wav",
+      "file": "20042bddcd3c17b1074f1282.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Oh! (Laughing).wav",
+      "file": "b5fe898f377195f4d570ebd1.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/Oh, don't worry..wav",
+      "file": "8f5a004b5cc9b0356b59f9a4.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Oh... yes..wav",
+      "file": "788d323e5bc4f22f789737a4.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Only together can we turn him to the Dark Side....wav",
+      "file": "8e62c1a28bfd499b8f4182e3.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Open the blast doors, open the blast doors!.wav",
+      "file": "4b06f3a6ff03c2b0e4704820.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Outside, in the cave.wav",
+      "file": "6452ad3690b7ba9808ab3de1.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/OWWW!!!.wav",
+      "file": "a9f83475e5fc13b4df4cd9e2.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Patience! For the Jedi, it is time to eat as well!.wav",
+      "file": "5d031f3022718010c36bdfec.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Perhaps you think you're being treated unfairly....wav",
+      "file": "12cd48108faa7cf1b154cfd2.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Possibly..wav",
+      "file": "f7ff7062a8a9b27ae5a1905e.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Powerful Jedi, was he!.wav",
+      "file": "7fff8379e7a18435c333584a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/R2 Hologram.wav",
+      "file": "3ca215dd8e68113d3c9daa6d.wav",
+      "voice": false,
+      "pool": "ambientEffects"
+    },
+    {
+      "filename": "Ambience/R2, where are you!.wav",
+      "file": "fc29c7aca19b94464d3a6a35.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Really..wav",
+      "file": "f2717c0b3e654983ed14ba9d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Reasonable..wav",
+      "file": "d33329a8d3655c63b094214a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Red Five, standing by..wav",
+      "file": "b1398893e7a061a74a89c253.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Relax..wav",
+      "file": "2c051109a9c358141e931b30.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Remember... the Force will be with you. Always..wav",
+      "file": "c8e3296f5da8e986f4eea998.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Rogue Group! Use your harpoons and tow cables!.wav",
+      "file": "0208b5d025cb8be34f5516ab.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Run, Luke! Run!.wav",
+      "file": "181e4ddd39a32f001e29e9f1.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Send the fleet to the far side of Endor..wav",
+      "file": "fd24ea58a39ce74e80603f06.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Since you are reluctant to provide is with the location....wav",
+      "file": "e833481eb06877656c44c492.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Sith Lords are our speciality..wav",
+      "file": "9bd5ac61a174e58002fb575a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/So be it..wav",
+      "file": "dadd1f6f2637dd8693865d46.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/So the prophecy says..wav",
+      "file": "e6333ee8db3ccde27305966d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/So, what I told you was true....wav",
+      "file": "e318b190afd9f9bccc724d86.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Soon, the Rebellion will be crushed....wav",
+      "file": "5e7d4d6b95eae697b7eb1ce8.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Steady, Dak!.wav",
+      "file": "125fff3d7be37a8b4b042a5d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Stop that ship!.wav",
+      "file": "49c249eee2c1bc2a7122e005.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Stop that....wav",
+      "file": "34eb8435a590002dafedf32c.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Stretch out with your feelings!.wav",
+      "file": "d82791b834e0fbc3b99d20f8.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Take a deep breath..wav",
+      "file": "93c242d5e0fc1c9f07583c7c.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Take a seat..wav",
+      "file": "c64ad09bb7b8a8b601d3f256.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Tatooine is sparsely populated..wav",
+      "file": "ce6ce129c0c094aa847ea84c.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Tell me, what's troubling you....wav",
+      "file": "9daca9f4be8756be5a1df93a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Terminate her, immediately!.wav",
+      "file": "7e5f8c8c8f5867787c809ce6.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/That armor's too strong for blasters!.wav",
+      "file": "df1b0c140cec952323e97faa.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/That doesn't sound too hard..wav",
+      "file": "b1faa7d4cb256c77585f834d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/That thing's operational!.wav",
+      "file": "786be6c8418c2da3d55db732.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/That's alright..wav",
+      "file": "1f1ec3e17ae9ddda18bcb95c.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/That's no moon... it's a space station..wav",
+      "file": "1d57d0abd3865d3c7ae9404f.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/That's possible..wav",
+      "file": "bb28258f5fc068f7fa76916e.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/That's... good news..wav",
+      "file": "390b8feecfbc061f80f59b53.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/The Death Star plans are not in the main computer..wav",
+      "file": "653720ece9c1c2053fa4026b.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/The Emperor does not share your optimistic appraisal of the situation..wav",
+      "file": "7295d5d40da32abd83d6e6bf.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/The Force is strong in my family..wav",
+      "file": "816973693eedc7550056d0d8.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/The Jedi turned against me!.wav",
+      "file": "db53b931e59e4902c2ff98b8.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/The negotiations were short..wav",
+      "file": "e06f99dea7d0f07b4c376b81.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/The technical readouts of that battlestation..wav",
+      "file": "4e12d445a00700f5f8bbb015.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/There wasn't anything you could have done..wav",
+      "file": "9a0b9383f3f00dc7c96505bc.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/There you will learn from Yoda..wav",
+      "file": "0d9f9830b0800f1033dce5b8.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/There's no doubt..wav",
+      "file": "c8c19f396d3a3a142dca3b96.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/There's no one here..wav",
+      "file": "0c62b5d67d1f98160dd57443.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/These aren't the droids you're looking for..wav",
+      "file": "24a93d8571cb2dc8c8eca874.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/This bickering is pointless!.wav",
+      "file": "5707abae725bc86ca60bee8e.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/This deal is getting worse all the time..wav",
+      "file": "7e9b8495b789e2de029e4450.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/This is a dangerous time for you....wav",
+      "file": "057e4b379deb662a84e283d0.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/This is a dangerous time for you..wav",
+      "file": "4c7faca21514104dbb55640c.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/This is no cave!.wav",
+      "file": "8a94ee3abc0274a89254fe65.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/This is Obi-Wan Kenobi..wav",
+      "file": "2437e373649ef4ff67c40f00.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/This is Red Five, I'm goin' in!.wav",
+      "file": "4286666d3b7da4ed5bc0ee14.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/This is ridiculous..wav",
+      "file": "be01d54261b9e65b781746ca.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/This is some rescue!.wav",
+      "file": "1d39b9bec357b3e464b2f038.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/This party's over..wav",
+      "file": "07e047ca4c5f2117ad46e95e.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Uncle Owen! Aunt Beru!.wav",
+      "file": "649f36de869586d2d7bcc876.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Unravel the mystery of the Sith....wav",
+      "file": "6e68b0febd8980f0e91cbaf9.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Use the Force, Luke!.wav",
+      "file": "1f3445a5074aa48248883713.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Vader. Is the Dark Side stronger....wav",
+      "file": "a52bac11dda03272ca802a83.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Watch that crossfire, boys!.wav",
+      "file": "2090576c7e4f3dfa996785d8.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/We decided to come and rescue you..wav",
+      "file": "69deb0dc8251dcbaee13ffae.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/We will deal with your Rebel friends soon enough..wav",
+      "file": "42bdbbc6733f88d287e19c94.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/We will then crush the Rebellion with one swift stroke..wav",
+      "file": "00b16b20caa655f67e082515.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/We will use all our resources to unravel this mystery..wav",
+      "file": "be8724bd3bf3d6bc9dc79b0d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/We would be honored if you would join us..wav",
+      "file": "12aaba50b1ade7eb712f601d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/We're going to the Dagobah system..wav",
+      "file": "4b83195e90d970a82a966b3f.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/We're keepers of the peace, not soldiers..wav",
+      "file": "3d86a900f555d895a7c3ab58.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/We've gotta be able to get some kind of reading.wav",
+      "file": "1bf43957ab62780197b9aa7e.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/We've gotta do something!.wav",
+      "file": "8a15b016d733a18d697b0386.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/We've gotta give him more time!.wav",
+      "file": "8cbed285157c24612585b24d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Well, c'mon!.wav",
+      "file": "7bad645e85e135852adcac7b.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Well, I'm glad you're here to tell us these things!.wav",
+      "file": "f0b7e488106e4570a6852579.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/What are you talking about....wav",
+      "file": "1548e292283bc2a811423ebd.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/What did you say..!.wav",
+      "file": "f30f4b59ff0a2654daf6a4b8.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/What do you mean....wav",
+      "file": "1b4b8ba8239ea3cee6b22391.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/What does that mean....wav",
+      "file": "2e9f9226847877b918a9a223.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/What have I done!.wav",
+      "file": "d9de641e461d52c551d23dac.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/What have you done to my ship!.wav",
+      "file": "4e117711ac97263d574df1c3.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/What is thy bidding, my Master....wav",
+      "file": "0cecea2ca645963726e7f763.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/What!.wav",
+      "file": "f3db85d6ab12fd67bcf4ee21.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/What's the matter....wav",
+      "file": "aa50a0e267ed010cd325ac46.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/What's this!.wav",
+      "file": "738de2ada19e71bceb068fe0.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/What..wav",
+      "file": "1ff5bc3823c5b0d6df20b2a0.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/When 900 years old YOU reach....wav",
+      "file": "7d471209db2a4ea1c3aebd2a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Where is the Rebel base....wav",
+      "file": "4c97c6b4a420da1564c8499a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Where..wav",
+      "file": "79d693ae11be608925111a9b.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Who's scruffy lookin'!.wav",
+      "file": "4f98994206b900a9f10ca00e.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Whoever placed that order did not have the authorization....wav",
+      "file": "e40bd4a499ac9a1d75fba35a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Why are you asking this of me....wav",
+      "file": "35584f3f1ce46738b4afdb61.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Why you slimy, double-crossin', no good swindler!.wav",
+      "file": "e76c3bd634f3c2ac5073e684.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Why, you stuck up, half-witted, scruffy looking, NERF herder!!.wav",
+      "file": "5a89cacc49d2b0e295e305cb.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Why..wav",
+      "file": "27b06b703e3cc88cbd281965.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Will somebody get this big, walking carpet....wav",
+      "file": "799a8485cdc1af8a07d20100.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Would you get going, you pirate!.wav",
+      "file": "0f642b28d2a772d1cc1dd3c0.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Ya still hangin' around this loser..!.wav",
+      "file": "f6b83c4dae5b03849594ba29.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Yes! A Jedi's strength flows from the Force!.wav",
+      "file": "cf1afac4a79eb43c345c577a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Yes, I know..wav",
+      "file": "2345ef336553d6d7f2f35194.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Yes, my master..wav",
+      "file": "5535bc15033d0d1361ef0042.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Yes....wav",
+      "file": "138df133b191e151539fc8c2.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Yes..wav",
+      "file": "1895b23a05739afd66050bff.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Yoda. You seek Yoda!.wav",
+      "file": "1077094e4f600775c2af819b.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You are on this council....wav",
+      "file": "7e331f0e2072031c4e0397c6.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You are part of the Rebel Alliance, and a traitor!.wav",
+      "file": "fd520b3503d3abb7eb343904.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You be more careful..wav",
+      "file": "e9a8d3b55fa0d1bc189e1d1d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You can tell me what THIS is..wav",
+      "file": "37c4b43cc7484500aa303c71.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You can't win, Darth..wav",
+      "file": "76cbdd5989b6fab3aa3e8457.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You could be a little nicer, though..wav",
+      "file": "af16a3565036f8745fc19616.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You could USE a good KISS!.wav",
+      "file": "e7f991293e96ed2513a5d8b7.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You don't know that..wav",
+      "file": "dfdf36552a93458e307ab20a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You don't know the power of the Dark Side..wav",
+      "file": "644d86fcfb571a5810537de3.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You have failed me for the last time, Admiral..wav",
+      "file": "df5aa95b19f6b5089fa5b815.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You in, kid... ok, stay sharp..wav",
+      "file": "9891d7a98a2da6ac9aeddcaa.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You like me because I'm a scoundrel..wav",
+      "file": "9abe8d2d0504ed6b44f62f5d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You must be very proud..wav",
+      "file": "ca6cffe507c5f6d8c4746db5.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You must feel the Force around you..wav",
+      "file": "71cd5a22e9696add4456ff92.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You must learn the ways of the Force..wav",
+      "file": "9df84de9bf077ef7da0daee0.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You must unlearn what you have learned..wav",
+      "file": "58ed26a119528bad8a17de67.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You needn't worry about your reward..wav",
+      "file": "60ae4fac414dd9daf8b228a3.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You seem a little on edge..wav",
+      "file": "c51e369378943f242a6eb00a.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You stand guard..wav",
+      "file": "841af775d9ed5249f95ad0af.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You underestimate my power!.wav",
+      "file": "36853ee169a2d39cb003cd89.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You were our only hope..wav",
+      "file": "38ab45e4f9d1de196ac2472d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You were right about one thing, Master..wav",
+      "file": "293f203bce2f7a0f0b43a2d6.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You will find that many of the truths we cling to....wav",
+      "file": "4cb66d3ada70a664b54465fb.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You will go to the Dagobah system..wav",
+      "file": "0fe3bc71b12e7388f465e72d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You're all clear, kid! Now, let's blow this thing and go home!.wav",
+      "file": "6004e1b84425baa2812091a9.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You're shorter than I expected..wav",
+      "file": "1017dc0179928430267ec927.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You're trembling..wav",
+      "file": "866e9e43f4dbc82bc4781054.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You've got a lot of guts coming here....wav",
+      "file": "c8ce0688cb7a38bb7e0df2fe.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/You've never heard of the Millennium Falcon....wav",
+      "file": "d16bec14ee2f3b4ff8ffb64d.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Your friend is quite a mercenary..wav",
+      "file": "8a5ac6e3f3c177b0b462d494.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Your insight serves you well..wav",
+      "file": "4718bf6a27c4fdb2944b5edc.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Your move..wav",
+      "file": "6999996d73c199b3cc3272b7.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Ambience/Your powers are weak, old man..wav",
+      "file": "7f17a6bfdbcb3f9a1e9a7b93.wav",
+      "voice": true,
+      "pool": "ambientQuotes"
+    },
+    {
+      "filename": "Clicking sounds/B1 Battle Droid/Roger, Roger!.wav",
+      "file": "3110571a81467b991d0c8ef7.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/AAT Cannon 1.wav",
+      "file": "ad074dbb495ba4f2d4eb00b8.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/AAT Cannon 2G.wav",
+      "file": "cdf75731e26735838d8ce809.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/AT-AT Blaster 1A.wav",
+      "file": "ad7a49f3e71eb930ed8c90f4.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Blaster Cannon 1A.wav",
+      "file": "a87475146c2d2522afb3a152.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Blaster Cannon 9.wav",
+      "file": "1e4364d6f8e98f038aedad47.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Blaster Draw 1A.wav",
+      "file": "fd0cbf7da95cf1ef839c17d3.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Blaster Draw 1B.wav",
+      "file": "00fc08095a84044ec6a07040.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Blaster Dry Fire.wav",
+      "file": "d96902a9fb4498efb5ae668a.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Blaster Pistol 1A.wav",
+      "file": "d9c15abaf1943d801ee98140.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Blaster Pistol 1AA.wav",
+      "file": "96744133edfd6f5ad1dddf1e.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Blaster Pistol 1AB.wav",
+      "file": "77bb4b1d028973f93ef79190.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Blaster Pistol 1AC.wav",
+      "file": "39d53edb4ddec17ad5836d78.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Blaster Pistol 1Q.wav",
+      "file": "77b66a13f8b441879d5a1998.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Blaster Turret 1B.wav",
+      "file": "fb63271b772ec2d0a1aae7e6.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Bowcaster 1A.wav",
+      "file": "66eb711bf8a86a4ead7009bd.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Cannon Spindown 1A.wav",
+      "file": "e7cadacf762449612f5945a9.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Clone Blaster 1A.wav",
+      "file": "fb553ed351df61997f71517b.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Clone Blaster 1B.wav",
+      "file": "075febb145f8269a7894d037.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Clone Blaster 2.wav",
+      "file": "ffdb5530156b0d1419e302db.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Clone Sniper Rifle.wav",
+      "file": "ef0d2d74af3f394dacea6c34.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Droid Blaster 1A.wav",
+      "file": "7420bd6e8911b245c34c00fa.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Droid Blaster 1B.wav",
+      "file": "1f4220b93bd1b86dea8b168a.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Droid Blaster 2.wav",
+      "file": "5d9382f0c3a66294566ce9e1.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Droid Starfighter Blaster 1A.wav",
+      "file": "de5ae2b1abd6bdce6d03c209.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Droid Starfighter Blaster 1B.wav",
+      "file": "561ba444d7d27b5072d18560.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Droideka Blaster 1A.wav",
+      "file": "d8cafca2de385ecc355fa4a7.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/DS Superlaser 2A.wav",
+      "file": "71153a8d82d90b7642c4642c.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/DS Superlaser 3.wav",
+      "file": "d92ee24c4f9110baca5f9375.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/DS Superlaser 4.wav",
+      "file": "9c0760cd0d93aa6a8bf35f6e.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/DS Superlaser 5.WAV",
+      "file": "141ffedce699a96c71648da8.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/DS Superlaser 6.wav",
+      "file": "691d887770370f12633673dd.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/DS Superlaser Start.wav",
+      "file": "b2b87f26d803bbc8ccf540fb.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/DS Turret 1J.wav",
+      "file": "dc110648466485463a091f3f.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/DSII Superlaser 1A.wav",
+      "file": "33942c3c70faf721814e1355.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/DSII Superlaser 1B.wav",
+      "file": "23d02ffdf16262e79f8c5f93.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/F-11D Rifle 1A.wav",
+      "file": "93dfbb4b14b04705cb2b4adb.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Falcon Laser 12.wav",
+      "file": "fca1871452885a7e336bc143.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Geonosian Beam Rifle.wav",
+      "file": "314f31ebeb59ff51ca08d6a2.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Han Solo's Blaster 1A.wav",
+      "file": "2da6f487de281a6f2717cc5a.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Han Solo's Blaster 1B.wav",
+      "file": "b1e57763b554a40e44725477.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Han Solo's Blaster 1C.wav",
+      "file": "7ae9b7be65b6a1eaaf06b1e7.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Heavy Blaster 1A.wav",
+      "file": "0a703a98d15cf1a799981438.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Heavy Cannon 1.wav",
+      "file": "169aa93269f7491c68b3549f.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Hoth Cannon 1A.wav",
+      "file": "b22146e4150a72c2d9d831db.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Hoth Cannon 6B.wav",
+      "file": "17b6f79a910d67814027a926.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Hoth Cannon 7.wav",
+      "file": "7dcbaa72b03e1432b9e95ccf.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Hoth Cannon 8.wav",
+      "file": "173f74508e951192d568b110.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Imperial Rifle 1A.wav",
+      "file": "3fb3b5ceb8c192d97e2337b1.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Imperial Rifle 1B.wav",
+      "file": "4c2a447edee0f2b7131017fe.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Imperial Rifle 1C.wav",
+      "file": "912a0bd7564e043b8d1a0075.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Ion Cannon Charge 2.wav",
+      "file": "f150be2aca689b4213efa302.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Ion Cannon Hoth 1.wav",
+      "file": "04219a34ce72897b13b58100.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Jango's Blaster 1A.wav",
+      "file": "e713e737b278d4ba766e7f3a.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Jango's Blaster 1B.wav",
+      "file": "93c9981f2c77b665fd7ee9c4.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Rebel Blaster Rifle 1A.wav",
+      "file": "ab84d26cb0f0eea6164f9b13.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Rebel Blaster Rifle 1B.wav",
+      "file": "5c9f1494919b96142267fbd3.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Rebel Blaster Rifle 1C.wav",
+      "file": "27fe627dd522b8be68cf5da1.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Rebel Blaster Rifle 1D.wav",
+      "file": "85db90f54a205cb2b9c08263.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Repeater 1.wav",
+      "file": "a4d9f7eee5a9ff2624b038b8.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Sonic Blaster 1B.wav",
+      "file": "520fb78e2e68f6a329b8fd5a.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/TIE Laser 1A.wav",
+      "file": "e8330738975ab21fafc303ea.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/TIE Laser 1B.wav",
+      "file": "d7cfe2252af82b7262a9c244.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/TIE Laser CHCH 1G.wav",
+      "file": "4b7e5d24f11a841fa826f3dc.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/TIE Laser Pass 1A.wav",
+      "file": "4ff1efd2a8e56531330a8f9e.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/TIE Laser Pass 1B.wav",
+      "file": "d950112869695645a5da2f41.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/TIE Laser Pass 1C.wav",
+      "file": "1f09a804ff653ac27cc31141.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/TIE Laser Pass 2A.wav",
+      "file": "976529c84a42cf36e076a0f4.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Turbolaser 1.wav",
+      "file": "23b0b9d1763c4da37e0dbbe6.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/Turbolaser 3Y.wav",
+      "file": "35d7436443507caf7bb6ad16.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Blasters and Cannons/XW Laser 1A.wav",
+      "file": "1e69d8ebde54fd888c843f2a.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Ewok Horns 1.wav",
+      "file": "04d890b75504ac096065178b.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Deactivations/Saber Deactivate 1A.wav",
+      "file": "6456bdcd80a4237d40455710.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Deactivations/Saber Deactivate Ren 1.wav",
+      "file": "26440570820c31900e31051f.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Ignitions/Saber Ignite Fail.wav",
+      "file": "d6c757024f535b10144089ee.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Ignitions/Saber Ignite Jedi 1A.wav",
+      "file": "a260ce5f69bc741790e0ec52.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Ignitions/Saber Ignite Jedi 1B.WAV",
+      "file": "29c103b5af4e2c87cf16beaa.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Ignitions/Saber Ignite Sith 2E.wav",
+      "file": "8d384ca30d18653de637c860.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Strikes/Saber Strike 3G.wav",
+      "file": "9babbee983932a5b9db7a4c1.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Strikes/Saber Strike 3H.wav",
+      "file": "857044c7d999b197bdcaeacd.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Strikes/Saber Strike 3I.wav",
+      "file": "f932c9d873c69d6d8dc74092.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Swings/Grievous Spin.wav",
+      "file": "ff252be333756bb9f192cc60.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Swings/Saber Spin Dual 1.wav",
+      "file": "6d9c35432261afa0b5fb8bbc.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Swings/Saber Swing Dual 1.wav",
+      "file": "d01f36fe94aebd429fcb6c7f.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Swings/Saber Swing Jedi 2.wav",
+      "file": "b4a24638c02e8dd1484a0a35.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Swings/Saber Swing Jedi 3.wav",
+      "file": "8bcb2612fde33539328dcbe6.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Swings/Saber Swing Jedi Multi 1.wav",
+      "file": "944371a9982616a0e0325863.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Swings/Saber Swing Ren 1.wav",
+      "file": "228b16afc047b9d843f3041a.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Swings/Saber Swing Sith 1.wav",
+      "file": "502416c9a72e8ba24cf07867.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Swings/Saber Swing Sith 2.wav",
+      "file": "41b8700118f171e1120d9b7b.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Clicking sounds/Lightsabers/Swings/Saber Swing Sith 6.wav",
+      "file": "08b1d84a17646f7e198d428f.wav",
+      "voice": false,
+      "pool": "clicks"
+    },
+    {
+      "filename": "Right Answer/Single/(Laughter).wav",
+      "file": "4889eda0f0d00dafccc279a0.wav",
+      "voice": false,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/(Long laugh).wav",
+      "file": "3a0b9203481a4f1a27925459.wav",
+      "voice": false,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Ah!.wav",
+      "file": "dee91cf5f4399140990c8791.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Ah, yes..wav",
+      "file": "032d2c44963f0936588f8414.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Always a pleasure to meet a Jedi..wav",
+      "file": "4235c4e091a09100621be297.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/And now, I sense you wish to continue your search....wav",
+      "file": "80ea4517a072a687dea90d4e.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Are you an angel....wav",
+      "file": "e6644ec01ad2f1236c99bf37.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/DO IT!.wav",
+      "file": "f92a81b20f7c5cf486224810.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Everything is proceeding as I have forseen..wav",
+      "file": "5e515ab472a0df5f312f1d85.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Good job..wav",
+      "file": "dd21a0fec9f5a675ceb38028.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Good shot, Janson!.wav",
+      "file": "58c527b33b9e7ed7709af45d.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Good shot, Red Two!.wav",
+      "file": "45c0f9a9fc468f22a081dcd3.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Good work..wav",
+      "file": "a06fd5485da4e253fbe7349c.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Good! (Laughter).wav",
+      "file": "cb84884a61244980bced2f76.wav",
+      "voice": false,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Good..wav",
+      "file": "9d4852d0e779823d959ca4e8.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Got him... I GOT HIM!.wav",
+      "file": "5b9f2e91555049cf66464c23.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Great, kid! Don't get cocky!.wav",
+      "file": "8ff6e1aa25fd093f5ba3f328.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Hello there!.wav",
+      "file": "cb32d0382795b199efd92a4c.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Hello, what have we here....wav",
+      "file": "59f9638a488b7480c42a1f4c.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Hello..wav",
+      "file": "6f532909e64d518b2218a967.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Hooah! That got him!.wav",
+      "file": "9187951be50e9e8aaefe97d3.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/I have forseen it..wav",
+      "file": "7f6e536620fee80de17e1233.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Impressive... most impressive..wav",
+      "file": "5afa4e28ba95c58e2415fdcc.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/It is your destiny..wav",
+      "file": "e9916e713ade41b8b01baa2f.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/So, you have accepted the truth..wav",
+      "file": "6c571c0d420353f02c3e4b0f.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/That is correct..wav",
+      "file": "dee3c1603ffb1a61eb3d4762.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/That's it..wav",
+      "file": "8cd2dfdd13fa008b298b3c1c.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/The Force is strong with this one..wav",
+      "file": "1b2f6e7baeda4222a90efbe7.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/The Force is with you, young Skywalker....wav",
+      "file": "451e2ae33b2d6f2dc0002a27.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/We did it!.wav",
+      "file": "128498c2b33e40d4d3ec3d7f.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/YAA-HOOO! AARGH!.wav",
+      "file": "49379c674a7ccfa8dda6488d.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/YEE-HOOO!.wav",
+      "file": "a54144a5e140a801dff10886.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Single/Yesssss....wav",
+      "file": "fd673d98bd20c5bb26754770.wav",
+      "voice": true,
+      "pool": "rightSingle"
+    },
+    {
+      "filename": "Right Answer/Whole Task/Great, kid! Don't get cocky!.wav",
+      "file": "8ff6e1aa25fd093f5ba3f328.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Right Answer/Whole Task/I'm looking forward to completing your training..wav",
+      "file": "b6ba2f8684e07ff1ff74da7e.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Right Answer/Whole Task/Impressive... most impressive..wav",
+      "file": "5afa4e28ba95c58e2415fdcc.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Right Answer/Whole Task/It is your destiny..wav",
+      "file": "e9916e713ade41b8b01baa2f.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Right Answer/Whole Task/Join me, and together, we can rule the Galaxy as father and son!.wav",
+      "file": "4477fa019f1564c033a55f35.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Right Answer/Whole Task/May the Force be with us..wav",
+      "file": "0adbc6038a9356b4d5c079bf.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Right Answer/Whole Task/Now... fulfill your destiny..wav",
+      "file": "e31c8087f14f7be77847e483.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Right Answer/Whole Task/The Force will be with you... always..wav",
+      "file": "0789eb840fb37f475a95edf1.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Right Answer/Whole Task/YAA-HOOO! AARGH!.wav",
+      "file": "49379c674a7ccfa8dda6488d.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Right Answer/Whole Task/YEE-HAAA!.wav",
+      "file": "78d3666c4d1c018acd295912.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Right Answer/Whole Task/YEE-HOOO!.wav",
+      "file": "a54144a5e140a801dff10886.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Right Answer/Whole Task/Your work here is finished, my friend..wav",
+      "file": "1bacfa64032a9c97021be477.wav",
+      "voice": true,
+      "pool": "rightTask"
+    },
+    {
+      "filename": "Wrong Answer/Single/(Evil Laughter).wav",
+      "file": "504bb3d192d06455d2621e21.wav",
+      "voice": false,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/(Sees tight tunnel space).wav",
+      "file": "75f3fd05ec9b2ecfb854cebc.wav",
+      "voice": false,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Bahahahaha!.wav",
+      "file": "dff0570efa326bc58a45d77a.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Buoooh..wav",
+      "file": "437f25ee69fa946fb61fbce0.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/CA-WAYZY!.wav",
+      "file": "b0c00fd7a05942d52af2eb3d.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Dis embarrassing!.wav",
+      "file": "a7342bdd3880d80e4cb1915a.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Dissen berry, berry bad..wav",
+      "file": "65786c16b88f3ce785ac83cf.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Don't do that!.wav",
+      "file": "c4e3379d12d8463c5ff8c089.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Don't fail me again..wav",
+      "file": "91c2716b36ef4e76a16e0a29.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Don't make me destroy you..wav",
+      "file": "59f0e01d7c4f9d504b2bb4b0.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Don't underestimate the Force..wav",
+      "file": "8987caa764ce2bba2cdf94eb.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Ex-squeeze me!.wav",
+      "file": "3f787f98d6b9fac8afc997c4.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Get back to work..wav",
+      "file": "2b0a8b3179e9e13b914bb605.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Grehhhhhh!.wav",
+      "file": "27027fbcbd2f6a54ff1303d2.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Ha ha... silly Jedi! Silly Jedi!.wav",
+      "file": "c94ddcd736fe5b7f19e87ca0.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Hey, you!.wav",
+      "file": "e337cf9e4230683cb7a4b747.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/How rude!.wav",
+      "file": "b3c5d3642ce3d78a08ce7ff0.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/I don't think so..wav",
+      "file": "fea122b8348afa3dc8ecbdc0.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/I felt a great disturbance in the Force..wav",
+      "file": "4bc1024c7b616cd79846958f.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/It's a trap!.wav",
+      "file": "90a9d1d778a3f9770a10c994.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/It's not fair!.wav",
+      "file": "56b50267f406c762e1af188f.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/It's unfair!.wav",
+      "file": "8078cc5627f12c2a556da1e1.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/No, NO different!.wav",
+      "file": "5dbf6e10aea27a9f3adbca22.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/No. anakin.wav",
+      "file": "d97ac640270f5edc820aae21.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/No..wav",
+      "file": "b270254ddd2ff5fceb599f10.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/NOOO!.wav",
+      "file": "f6d52d0bcd2f0b2ea04b3cea.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/NOOOOO!.wav",
+      "file": "87f49e818c142aa0ba6d0f85.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Not yet..wav",
+      "file": "d54858103a7a86ea65a6f077.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Now is not the time for this..wav",
+      "file": "135c87a975c7aae2455be323.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Now you will experience the full power of the Dark Side....wav",
+      "file": "01e56cdb55cc6792746b2e9d.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Oh ho ho ho ho....wav",
+      "file": "ee23566b7ba767b0d541c1fc.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Oh, no..wav",
+      "file": "11838e75c3f9615d99cf9815.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Ouch!.wav",
+      "file": "07042e04b98563ed3a85c9da.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Patience, my friend..wav",
+      "file": "8df12c0a55bf9dfc2e8ccfab.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/There is a great disturbance in the Force..wav",
+      "file": "b48379cf20ef9f627ac15d8d.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/There is much fear that clouds your judgement..wav",
+      "file": "a420a3bd33a82589b597fb11.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Uh oh!.wav",
+      "file": "35893c2195fa6fa348be5d1e.wav",
+      "voice": false,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/What the!! AAAAAAGH!.wav",
+      "file": "bb6d0eb1564850381cc36e7b.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/Wilhelm Scream 1.wav",
+      "file": "cd85e6a69706794ca45191fb.wav",
+      "voice": false,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/You fool!.wav",
+      "file": "f0b7b6b61090c0bba2df0495.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/You must realize, you are doomed..wav",
+      "file": "b2518083c5522ca3a9a19a07.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/You stupid little astro droid..wav",
+      "file": "bd4f3a31dfe616297541ec46.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/You will be sorry!.wav",
+      "file": "68a3f9d2674b0f1545bbe8a3.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Single/You will find that it is you who are mistaken..wav",
+      "file": "8cc1e38456f509e1c0c11ec9.wav",
+      "voice": true,
+      "pool": "wrongSingle"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/(Cackling).wav",
+      "file": "fd4ad417a447eb3fabfcfdeb.wav",
+      "voice": false,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/(Evil Laughter).wav",
+      "file": "504bb3d192d06455d2621e21.wav",
+      "voice": false,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/(Screaming in agony).wav",
+      "file": "51f285584e250211ecc9bc36.wav",
+      "voice": false,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/Do! Or do not. There is no try..wav",
+      "file": "54e843fb5746ddff1ffdb3a4.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/Don't fail me again..wav",
+      "file": "91c2716b36ef4e76a16e0a29.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/Don't make me destroy you..wav",
+      "file": "59f0e01d7c4f9d504b2bb4b0.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/Don't underestimate the Force..wav",
+      "file": "8987caa764ce2bba2cdf94eb.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/I HATE YOU!!!.wav",
+      "file": "8d38042c6ddef1d6ee5f75ef.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/If you only knew the power of the Dark Side..wav",
+      "file": "a8d5fc2162796e0e8808d06e.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/It just isn't fair!.wav",
+      "file": "50ce40037c320b5bd1514876.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/LIAR!.wav",
+      "file": "64bed03c787c289805505eb3.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/NO! NO!!!!.wav",
+      "file": "e475247c7f247feeafd69e15.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/NOOOOO!.wav",
+      "file": "87f49e818c142aa0ba6d0f85.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/That is why you fail..wav",
+      "file": "e09cf39a4e2371a9b7ea2a1f.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/You have lost!.wav",
+      "file": "819feaec64ca782ceb21d7ef.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/YOU WERE THE CHOSEN ONE!.wav",
+      "file": "c5d4103f954e12f4c1ed5a56.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    },
+    {
+      "filename": "Wrong Answer/Whole Task/You're gravely mistaken.wav",
+      "file": "57265384722b4788808df012.wav",
+      "voice": true,
+      "pool": "wrongTask"
+    }
+  ]
+}

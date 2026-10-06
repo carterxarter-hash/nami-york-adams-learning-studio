@@ -39,7 +39,7 @@ jobs:
           test -f dist/icons/icon-192.png
           test -f dist/icons/icon-512.png
           test -f dist/resources/sw-audio/sounds.json
-          node --input-type=module -e "import fs from 'node:fs'; const m=JSON.parse(fs.readFileSync('dist/resources/sw-audio/sounds.json')); if(m.entries.length<700 || m.entries.some(e=>!fs.existsSync('dist/resources/sw-audio/'+e.file))) process.exit(1);"
+          node --input-type=module -e "import fs from 'node:fs'; const m=JSON.parse(fs.readFileSync('dist/resources/sw-audio/sounds.json')); const c=JSON.parse(fs.readFileSync('scripts/starwars-audio-catalog.json')); if(m.version!==2 || m.entries.length!==c.entries.length || m.entries.some((e,i)=>e.file!==c.entries[i].file || e.pool!==c.entries[i].pool || !fs.existsSync('dist/resources/sw-audio/'+e.file))) process.exit(1);"
           du -sh dist
           echo 'Verified full PWA shell and individually playable Star Wars audio.'
 

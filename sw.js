@@ -1,5 +1,5 @@
-const CACHE = 'nami-learning-studio-2026-10-05-v11-direct-audio';
-const SHELL = './index.html?v=11';
+const CACHE = 'nami-learning-studio-2026-10-06-v12-curated-audio';
+const SHELL = './index.html?v=12';
 const CORE = [
   SHELL,
   './manifest.webmanifest',
