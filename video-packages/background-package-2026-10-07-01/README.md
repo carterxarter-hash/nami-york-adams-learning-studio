@@ -1,0 +1,1 @@
+Staging package for background-package-2026-10-07-01. Reconstructed and SHA-256 verified during the Netlify build before publication.
