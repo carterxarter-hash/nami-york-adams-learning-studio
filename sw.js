@@ -1,5 +1,5 @@
-const CACHE = 'nami-learning-studio-2026-10-07-v13-video-background';
-const SHELL = './index.html?v=13';
+const CACHE = 'nami-learning-studio-2026-10-07-v14-music-browser';
+const SHELL = './index.html?v=14';
 const CORE = [
   SHELL,
   './manifest.webmanifest',
@@ -8,6 +8,7 @@ const CORE = [
   './icons/icon-192.png',
   './icons/icon-512.png',
   './resources/starwars-font.css?v=2',
+  './starwars-music-browser.js?v=2',
 ];
 
 self.addEventListener('install', (event) => {
