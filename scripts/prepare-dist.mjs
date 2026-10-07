@@ -20,6 +20,19 @@ const copyFile = (source, destination) => {
 
 copyFile('sw.js', 'dist/sw.js');
 copyFile('manifest.webmanifest', 'dist/manifest.webmanifest');
+copyFile('public/starwars-music-browser.js', 'dist/starwars-music-browser.js');
+
+const distIndex = path.join(dist, 'index.html');
+if (!fs.existsSync(distIndex)) {
+  throw new Error('Vite dist/index.html does not exist.');
+}
+let html = fs.readFileSync(distIndex, 'utf8');
+const musicBrowserTag = '<script src="./starwars-music-browser.js?v=2" defer></script>';
+if (!html.includes('starwars-music-browser.js')) {
+  if (!html.includes('</body>')) throw new Error('Could not find </body> in dist/index.html.');
+  html = html.replace('</body>', musicBrowserTag + '\n</body>');
+  fs.writeFileSync(distIndex, html);
+}
 
 // The source ZIPs stay in Git for rebuilds; production serves extracted clips.
 fs.rmSync(path.join(dist, 'resources/sw-sfx'), { recursive: true, force: true });
@@ -33,4 +46,4 @@ if (!fs.existsSync(iconsSource)) {
 fs.rmSync(iconsDestination, { recursive: true, force: true });
 fs.cpSync(iconsSource, iconsDestination, { recursive: true });
 
-console.log('Copied service worker, manifest, and icons into dist.');
+console.log('Copied PWA files and injected Star Wars music browser into dist/index.html.');
