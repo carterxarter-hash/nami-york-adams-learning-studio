@@ -1,0 +1,1 @@
+Staging branch only. The package is not production-visible until all encoded payload blocks are present, reconstructed, SHA-256 verified, and the rotation handoff is QA-tested.
