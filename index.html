@@ -179,6 +179,12 @@ html[data-motion=off] .reaction-orbit i{display:none}html[data-reactions=off] .p
 }
 
 .theme-motion-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.85;mask-image:linear-gradient(90deg,#000 0%,#000 18%,#0006 35%,#0005 70%,#000c 100%)}
+.starwars-video-backdrop{position:absolute;inset:0;overflow:hidden;pointer-events:none;background:#050b16}
+.starwars-video-backdrop[hidden]{display:none}
+.starwars-video-backdrop video{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.starwars-video-backdrop:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#04091373,#04091399 48%,#04091370),linear-gradient(0deg,#04091388,transparent 60%)}
+:root[data-theme=starwars] .atmosphere-preview.video-preview{background:linear-gradient(0deg,#050b1699,#050b1622);min-height:280px}
+@media(max-width:650px){.starwars-video-backdrop:after{background:#0409138c}}
 :root[data-atmosphere] body,:root[data-atmosphere] .shell{background:transparent}
 :root[data-atmosphere] .ambient-orb,:root[data-atmosphere] .ambient-grid,:root[data-atmosphere] .ambient-thread{display:none}
 :root[data-atmosphere] .ambient-scene{background:var(--bg)}
@@ -974,7 +980,7 @@ function themeFeedbackPreview(){
  return `<section class="theme-feedback-samples" aria-label="Examples of feedback in this theme"><div><span class="eyebrow">A STRONG CHOICE</span><p>${esc(pack.strong[0])}</p></div><div><span class="eyebrow">A CHANCE TO RETHINK</span><p>${esc(pack.rethink[0])}</p></div></section><p class="theme-feedback-note">The theme adds a little personality to feedback. Turn on Quiet feedback in My learning if you want it plain.</p>`;
 }
 function themeArtworkCredit(){
- const credits={cosmos:'Reference: NASA, ESA/Hubble and the Hubble Heritage Team.',arcade:'Arcade images: BubbaYoshi and Bandai Namco Entertainment America.',starry:'Vincent van Gogh · The Starry Night · supplied reference.',starwars:'Star Wars · supplied poster reference.'};
+ const credits={cosmos:'Reference: NASA, ESA/Hubble and the Hubble Heritage Team.',arcade:'Arcade images: BubbaYoshi and Bandai Namco Entertainment America.',starry:'Vincent van Gogh · The Starry Night · supplied reference.',starwars:'Star Wars · supplied space-battle video and poster reference.'};
  return credits[state.theme]?`${credits[state.theme]} <a href="#sources">Artwork credits</a>`:'';
 }
 const themesSourcePage=sourcePage;
@@ -1099,14 +1105,49 @@ const ATMOSPHERES={
  storm:['storm','Rolling cloud light and angled rain'],abyss:['abyss','Deep-water light shafts and bubbles'],
  comic:['pop','Moving halftone dots and graphic shapes'],holo:['holo','Iridescent ribbons of light'],
  matrix:['matrix','Falling green digital code'],arcade:['arcade','Pac-Man, ghosts, and a glowing blue maze'],
- vicepunk:['grid','A bold cyan-and-yellow neon grid'],starwars:['starwars','An ongoing battle: starfighters, capital ships, and the Death Star']
+ vicepunk:['grid','A bold cyan-and-yellow neon grid'],starwars:['starwars','A cinematic space battle, playing behind the Studio']
 };
 
 const atmosphere=(()=>{
  let canvas=null,ctx=null,theme='navy',kind='glow',width=1000,height=800,dpr=1;
+ let video=null,videoHost=null,videoFailed=false,videoPending=false,pageAway=false;
  const pictures={};
  let enabled=true,frameId=0,lastFrame=0,clock=15,previous=0,colors=['#6ce0ea','#a89aff'];
  const reduced=typeof window.matchMedia==='function'?window.matchMedia('(prefers-reduced-motion: reduce)'):null;
+ function videoActive(){return kind==='starwars'&&!videoFailed;}
+ function syncVideo(){
+  if(kind==='starwars'&&!videoHost){
+   const host=document.querySelector('.ambient-scene');if(!host)return;
+   videoHost=document.createElement('div');videoHost.className='starwars-video-backdrop';
+   videoHost.setAttribute('aria-hidden','true');
+   video=document.createElement('video');video.id='starwars-background-video';
+   video.muted=true;video.defaultMuted=true;video.loop=true;video.playsInline=true;video.preload='none';
+   video.setAttribute('muted','');video.setAttribute('playsinline','');video.setAttribute('webkit-playsinline','');
+   video.setAttribute('disablepictureinpicture','');video.disablePictureInPicture=true;video.tabIndex=-1;
+   video.poster='./resources/sw-video/battle-poster-v1.jpg';
+   video.addEventListener('error',()=>{videoFailed=true;resume();draw();});
+   videoHost.append(video);host.append(videoHost);
+  }
+  if(canvas)canvas.style.display=videoActive()?'none':'';
+  if(!video)return;
+  videoHost.hidden=!videoActive();
+  if(!videoActive()||!allowed()){video.pause();return;}
+  if(!video.getAttribute('src')){
+   const mobile=window.matchMedia('(max-width: 850px)').matches||navigator.connection?.saveData;
+   video.src='./resources/sw-video/battle-'+(mobile?'mobile':'desktop')+'-v1.mp4';
+   video.load();
+  }
+  if(!video.paused||videoPending)return;
+  videoPending=true;
+  Promise.resolve(video.play()).then(()=>{
+   // A theme switch or pause may arrive while the first frame is loading.
+   if(!videoActive()||!allowed())video.pause();
+  }).catch(error=>{
+   // Mobile power-saving modes may require a tap; retain the poster and retry
+   // on the next interaction instead of showing a broken player.
+   if(error.name!=='NotAllowedError'&&error.name!=='AbortError'){videoFailed=true;resume();draw();}
+  }).finally(()=>{videoPending=false;});
+ }
  const seed=(n)=>{const v=Math.sin(n*127.1+311.7)*43758.5453;return v-Math.floor(v);};
  const wrap=(n,max)=>((n%max)+max)%max;
  function color(hex,alpha){
@@ -1504,6 +1545,7 @@ const atmosphere=(()=>{
   }
  }
  function draw(){
+  if(videoActive())return;
   drawScene();
   const preview=document.querySelector('.atmosphere-preview-canvas');
   if(!preview||!ctx)return;
@@ -1512,16 +1554,16 @@ const atmosphere=(()=>{
   const pc=preview.getContext('2d');if(!pc)return;
   const saved=[ctx,width,height];ctx=pc;width=w;height=h;drawScene();[ctx,width,height]=saved;
  }
- function allowed(){return enabled&&!reduced?.matches&&!document.hidden;}
+ function allowed(){return enabled&&!reduced?.matches&&!document.hidden&&!pageAway;}
  function stop(){if(frameId&&typeof window.cancelAnimationFrame==='function')window.cancelAnimationFrame(frameId);frameId=0;previous=0;}
  function frame(now){
-  frameId=0;if(!ctx||!allowed())return;
+  frameId=0;if(!ctx||!allowed()||videoActive())return;
   if(!previous)previous=now;
   if(now-lastFrame>=1000/24){clock+=Math.min((now-previous)/1000,.12);previous=now;lastFrame=now;draw();}
   frameId=window.requestAnimationFrame(frame);
  }
  function resume(){
-  stop();if(ctx&&allowed()&&typeof window.requestAnimationFrame==='function')frameId=window.requestAnimationFrame(frame);
+  stop();syncVideo();if(ctx&&allowed()&&!videoActive()&&typeof window.requestAnimationFrame==='function')frameId=window.requestAnimationFrame(frame);
   document.documentElement.dataset.atmosphereMotion=allowed()?'on':'off';
  }
  function set(id,motion){
@@ -1533,7 +1575,10 @@ const atmosphere=(()=>{
  }
  window.addEventListener('resize',resize);
  document.addEventListener('visibilitychange',resume);
- window.addEventListener('pagehide',stop);window.addEventListener('pageshow',resume);
+ window.addEventListener('pagehide',()=>{pageAway=true;stop();video?.pause();});
+ window.addEventListener('pageshow',()=>{pageAway=false;resume();});
+ document.addEventListener('pointerdown',()=>{if(videoActive()&&video?.paused)syncVideo();},{passive:true});
+ document.addEventListener('keydown',()=>{if(videoActive()&&video?.paused)syncVideo();});
  reduced?.addEventListener?.('change',resume);
  return {set};
 })();
@@ -1550,7 +1595,7 @@ themePage=function(){
  const selected=THEMES.find(t=>t.id===state.theme)||THEMES[0];
  const artwork=THEME_ASSETS[selected.id];
  return head('Themes',"Pick whatever vibe you like",'This only changes how the Studio looks and talks. The actual training stays the same, and you can shut off motion whenever you want.')+
- `<section class="atmosphere-preview${artwork?' living-preview':''}" aria-label="Preview of the selected theme">${artwork?'<canvas class="atmosphere-preview-canvas" aria-hidden="true"></canvas>':''}<div class="atmosphere-preview-label"><span class="eyebrow">${esc(selected.name)}</span><h2>${esc(ATMOSPHERES[selected.id][1])}</h2></div><button class="btn" data-story="motion" aria-pressed="${!state.settings.motion}">${icon(state.settings.motion?'pause':'spark')}${state.settings.motion?'Pause motion':'Motion paused'}</button></section>`+
+ `<section class="atmosphere-preview${selected.id==='starwars'?' video-preview':artwork?' living-preview':''}" aria-label="Preview of the selected theme">${artwork&&selected.id!=='starwars'?'<canvas class="atmosphere-preview-canvas" aria-hidden="true"></canvas>':''}<div class="atmosphere-preview-label"><span class="eyebrow">${esc(selected.name)}</span><h2>${esc(ATMOSPHERES[selected.id][1])}</h2></div><button class="btn" data-story="motion" aria-pressed="${!state.settings.motion}">${icon(state.settings.motion?'pause':'spark')}${state.settings.motion?'Pause motion':'Motion paused'}</button></section>`+
  (artwork?`<details class="theme-reference"><summary>Visual inspiration</summary><div><img src="${artwork}" alt="${esc(selected.name)} visual reference" width="112" height="84"><p>${themeArtworkCredit()||'The reference palette and forms are reflected in the animated atmosphere.'}</p></div></details>`:'')+themeFeedbackPreview()+
  '<p class="atmosphere-help">If your device asks for less motion, the app listens. Your theme and motion settings save the same way as the rest of your learning record. On iPhone, the Home Screen icon uses the theme that is active when you add the Studio to your Home Screen.</p>'+ 
  (selected.id==='matrix'?'<section class="panel settings-panel matrix-audio-settings"><div><p class="eyebrow">MATRIX SETTINGS</p><h2>Audio</h2><p>The soundtrack keeps playing while you move around the Studio. Come back here whenever you want to change it.</p></div><div class="matrix-audio-settings-controls"><div class="matrix-audio-settings-row"><button class="matrix-audio-btn" type="button" data-matrix-audio="prev" aria-label="Previous track">◀</button><button class="matrix-audio-btn primary" type="button" data-matrix-audio="toggle">Play</button><button class="matrix-audio-btn" type="button" data-matrix-audio="next" aria-label="Next track">▶</button><label><span>MUSIC</span><input data-matrix-audio="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(matrixAudioPrefs().volume)||38))+'" aria-label="Soundtrack volume"></label></div><div class="matrix-audio-settings-row"><button class="matrix-audio-btn matrix-sfx-toggle" type="button" data-matrix-sfx="toggle" aria-pressed="'+(matrixSfxPrefs().enabled?'true':'false')+'">'+(matrixSfxPrefs().enabled?'SFX on':'SFX off')+'</button><label><span>SFX</span><input data-matrix-sfx="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(matrixSfxPrefs().volume)||34))+'" aria-label="Sound effects volume"></label></div></div></section>':'')+(selected.id==='starwars'?'<section class="panel settings-panel starwars-audio-settings"><div><p class="eyebrow">STAR WARS SETTINGS</p><h2>Original Trilogy audio</h2><p>Only the classic themes from <em>A New Hope</em>, <em>The Empire Strikes Back</em>, and <em>Return of the Jedi</em> are in this rotation. Music keeps going while you move around the Studio and pauses when you leave this theme.</p></div><div class="starwars-audio-settings-controls"><div class="starwars-audio-settings-row"><button class="starwars-audio-btn" type="button" data-starwars-audio="prev" aria-label="Previous track">◀</button><button class="starwars-audio-btn primary" type="button" data-starwars-audio="toggle">'+(starWarsYTPlaying?'Pause':'Play')+'</button><button class="starwars-audio-btn" type="button" data-starwars-audio="next" aria-label="Next track">▶</button><label><span>MUSIC</span><input data-starwars-audio="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(starWarsAudioPrefs().volume)||42))+'" aria-label="Star Wars soundtrack volume"></label></div><div class="starwars-sfx-row"><button class="starwars-audio-btn starwars-sfx-toggle '+(starWarsSfxPrefs().enabled?'on':'')+'" type="button" data-starwars-sfx="toggle" aria-pressed="'+(starWarsSfxPrefs().enabled?'true':'false')+'">'+(starWarsSfxPrefs().enabled?'SFX on':'SFX off')+'</button><label><span>SFX</span><input data-starwars-sfx="volume" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(starWarsSfxPrefs().volume)||34))+'" aria-label="Star Wars sound effects volume"></label></div><div class="starwars-sfx-row"><button class="starwars-audio-btn starwars-sfx-toggle '+(starWarsSfxPrefs().ambient?'on':'')+'" type="button" data-starwars-sfx="ambient" aria-pressed="'+(starWarsSfxPrefs().ambient?'true':'false')+'">'+(starWarsSfxPrefs().ambient?'Ambience on':'Ambience off')+'</button><label><span>AMBIENCE VOLUME</span><input data-starwars-sfx="intensity" type="range" min="0" max="100" value="'+Math.max(0,Math.min(100,Number(starWarsSfxPrefs().intensity)??48))+'" aria-label="Star Wars ambience volume"></label></div><div class="starwars-sfx-row"><button class="starwars-audio-btn starwars-sfx-toggle '+(starWarsSfxPrefs().voices?'on':'')+'" type="button" data-starwars-sfx="voices" aria-pressed="'+(starWarsSfxPrefs().voices?'true':'false')+'">'+(starWarsSfxPrefs().voices?'Voices on':'Voices off')+'</button><span class="starwars-audio-note" data-starwars-sfx-status role="status" aria-live="polite">Tap Enable audio to start the soundscape</span></div><div class="starwars-sfx-row"><button class="starwars-audio-btn" type="button" data-starwars-sfx="enable">Enable audio</button><button class="starwars-audio-btn" type="button" data-starwars-sfx="sample-blaster">Preview blaster</button><button class="starwars-audio-btn" type="button" data-starwars-sfx="sample-saber">Preview saber</button><button class="starwars-audio-btn" type="button" data-starwars-sfx="sample-voice">Preview voice</button><button class="starwars-audio-btn" type="button" data-starwars-sfx="retry">Retry audio</button></div></div><p class="starwars-audio-note"><span data-starwars-track>Original Trilogy classics</span> · John Williams / London Symphony Orchestra. Playback starts only after you tap Play.</p><p class="starwars-audio-note">Tap Enable audio once to start the soundscape. Voices plays a random ambient quote, then waits 7–15 seconds before the next. Ambience adds nonverbal sounds and battle effects on its own timeline, with 15–25-second gaps, over a low engine hum. The two can overlap; answer feedback takes priority over dialogue. Clicks rotate through the entire clicking-sound collection, and graded feedback uses the matching single-answer or whole-task folder. Preview buttons let you try each sound right away. Sound effects pause when you hide the page or leave this theme. Exact quote searches still work as Easter eggs.</p></section>':'')+
