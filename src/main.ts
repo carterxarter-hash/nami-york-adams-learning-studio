@@ -1,19 +1,63 @@
 import './styles.css';
 
 const STAR_WARS_TRACKS = [
+  { id: 'dW9xbFLaatU', title: 'Star Wars Main Title and the Arrival at Naboo', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'WUC7MgkOgKA', title: 'Anakin\'s Theme', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'cqh1mKpvzCI', title: 'Jar Jar\'s Introduction and the Swim to Otoh Gunga', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'zvlHwdINoTs', title: 'The Trip to the Naboo Temple and the Audience with Boss Nass', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
   { id: 'D_2bluVPsb0', title: 'Duel of the Fates', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'inyJGAXkbEg', title: 'The Arrival at Tatooine and the Flag Parade', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'CmVY8YZI_hQ', title: 'Qui-Gon\'s Noble End', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'zNIZ_Ym-ECE', title: 'Anakin Defeats Sebulba', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'u_mmm2CrCds', title: 'The Sith Spacecraft and the Droid Battle', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'x-U5yUw2_AQ', title: 'Panaka and the Queen\'s Protectors', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'JP-Phg1hey0', title: 'The Droid Invasion and the Appearance of Darth Maul', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'Gfcr1NnoAkw', title: 'Queen Amidala and the Naboo Palace', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'W2AUHTZA89s', title: 'He Is the Chosen One', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: '0OHj4XXytaI', title: 'Passage Through the Planet Core', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: '9ZBihl6gk4c', title: 'The High Council Meeting and Qui-Gon\'s Funeral', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'BX0YGAyjd88', title: 'Watto\'s Deal and Kids at Play', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'DqLSBS8E7Do', title: 'Augie\'s Great Municipal Band and End Credits', film: 'The Phantom Menace', era: 'Prequel Trilogy' },
+  { id: 'de7Ny4oe4Sg', title: 'Star Wars Main Title and Ambush on Coruscant', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: '7wMiMDBHnJ0', title: 'Across the Stars (Love Theme from "Star Wars: Attack of the Clones")', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: 'fD-TOXoIaWQ', title: 'Jango\'s Escape', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: '4x5xORsCKYs', title: 'Return to Tatooine', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: 'F6sKutslvIg', title: 'Confrontation with Count Dooku and Finale', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: 'ljw9qKXKo-w', title: 'The Tusken Camp and the Homestead', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: 'QU2HpDUlUzY', title: 'Love Pledge and the Arena', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: 'auKKpluaMSg', title: 'Departing Coruscant', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: 'frEjVrDXmKI', title: 'Anakin and Padmé', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: '1PQ-nAskDcM', title: 'Zam the Assassin and the Chase Through Coruscant', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: '4K_zN6bNd3s', title: 'Yoda and the Younglings', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: '8HiQD_3S8OM', title: 'The Meadow Picnic', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: 'r5Dk_0LRNNU', title: 'Bounty Hunter\'s Pursuit', film: 'Attack of the Clones', era: 'Prequel Trilogy' },
+  { id: '3gqnXj5RngA', title: 'Palpatine\'s Teachings', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'FVWr249AUq4', title: 'Anakin\'s Dark Deeds', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'NMYUsYMDqgc', title: 'Star Wars and the Revenge of the Sith', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'pykumg2nKtI', title: 'Enter Lord Vader', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'Q4JsA4jF7yo', title: 'Padmé\'s Ruminations', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'ApJumkyz7F0', title: 'General Grievous', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: '2MqBvcjxJ70', title: 'Anakin\'s Dream', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'HUpipZMNGhA', title: 'The Immolation Scene', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'Tl-dmo9_VCg', title: 'Anakin vs. Obi-Wan', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'Ossn_cc6SyQ', title: 'Grievous and the Droids', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'k_OTAM5Yu3M', title: 'Grievous Speaks to Lord Sidious', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'ZK52tEenER8', title: 'A New Hope and End Credits', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'xaqF9mRLu38', title: 'Battle of the Heroes', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'Oppez7oQ30w', title: 'The Birth of the Twins and Padmé\'s Destiny', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
+  { id: 'm2p-im7cxa4', title: 'Anakin\'s Betrayal', film: 'Revenge of the Sith', era: 'Prequel Trilogy' },
   { id: 'e9lapdvLSGw', title: 'Main Title', film: 'A New Hope', era: 'Original Trilogy' },
-  { id: 'eyHOUMWw5_M', title: "Princess Leia's Theme", film: 'A New Hope', era: 'Original Trilogy' },
+  { id: 'eyHOUMWw5_M', title: 'Princess Leia\'s Theme', film: 'A New Hope', era: 'Original Trilogy' },
   { id: 'EsvfptdFXf4', title: 'Cantina Band', film: 'A New Hope', era: 'Original Trilogy' },
   { id: 'trYeKG17hYc', title: 'The Throne Room and End Title', film: 'A New Hope', era: 'Original Trilogy' },
   { id: 's3SZ5sIMY6o', title: 'The Imperial March', film: 'The Empire Strikes Back', era: 'Original Trilogy' },
-  { id: '9C8J-jhMtRA', title: "Yoda's Theme", film: 'The Empire Strikes Back', era: 'Original Trilogy' },
+  { id: '9C8J-jhMtRA', title: 'Yoda\'s Theme', film: 'The Empire Strikes Back', era: 'Original Trilogy' },
   { id: 'XNDEljd1cQI', title: 'The Asteroid Field', film: 'The Empire Strikes Back', era: 'Original Trilogy' },
   { id: 'oSXeOY_Ad4U', title: 'Luke and Leia', film: 'Return of the Jedi', era: 'Original Trilogy' }
 ] as const;
 
 const STAR_WARS_TRACK_IDS = STAR_WARS_TRACKS.map(track => track.id);
-const STAR_WARS_MENU_PREFS_KEY = 'namiya-starwars-music-menu-v1';
+const STAR_WARS_MENU_PREFS_KEY = 'namiya-starwars-music-menu-v2';
 
 type StarWarsMenuPrefs = { shuffle: boolean; index: number };
 
@@ -94,13 +138,13 @@ async function loadExpandedPlaylist(index: number, autoplay = true): Promise<boo
 }
 
 function groupedTrackOptions(): string {
-  const groups = ['Prequel Trilogy', 'Original Trilogy'];
-  return groups.map(era => {
+  const groups = ['The Phantom Menace', 'Attack of the Clones', 'Revenge of the Sith', 'A New Hope', 'The Empire Strikes Back', 'Return of the Jedi'];
+  return groups.map(film => {
     const options = STAR_WARS_TRACKS.map((track, index) => ({ track, index }))
-      .filter(item => item.track.era === era)
-      .map(item => `<option value="${item.index}">${item.track.title} · ${item.track.film}</option>`)
+      .filter(item => item.track.film === film)
+      .map(item => `<option value="${item.index}">${item.track.title}</option>`)
       .join('');
-    return `<optgroup label="${era}">${options}</optgroup>`;
+    return `<optgroup label="${film}">${options}</optgroup>`;
   }).join('');
 }
 
@@ -124,12 +168,12 @@ function enhanceStarWarsMusicPanel(): void {
   if (!panel) return;
 
   const heading = panel.querySelector<HTMLHeadingElement>('h2');
-  if (heading && /Original Trilogy audio/i.test(heading.textContent || '')) heading.textContent = 'Saga soundtrack';
+  if (heading && /Original Trilogy audio|Saga soundtrack/i.test(heading.textContent || '')) heading.textContent = 'Saga soundtrack';
 
   const intro = panel.querySelector<HTMLParagraphElement>('h2 + p');
   if (intro && !intro.dataset.expandedMusicCopy) {
     intro.dataset.expandedMusicCopy = 'true';
-    intro.textContent = 'Choose a track directly, use the transport controls, or turn on shuffle. Music keeps playing while you move around the Studio and pauses when you leave the Star Wars theme.';
+    intro.textContent = 'Choose any track directly, use the transport controls, or turn on shuffle. The full 45-track Prequel Trilogy playlist is included alongside the Original Trilogy favorites already in the Studio.';
   }
 
   if (!panel.querySelector('[data-starwars-music-browser]')) {
@@ -155,7 +199,7 @@ function enhanceStarWarsMusicPanel(): void {
           </label>
           <button class="starwars-audio-btn starwars-shuffle-btn" type="button" data-starwars-shuffle aria-pressed="false">Shuffle off</button>
         </div>
-        <p class="starwars-music-browser-note">Prequel music now includes <strong>Duel of the Fates</strong>. The menu lists every soundtrack track currently available in the theme.</p>`;
+        <p class="starwars-music-browser-note"><strong>53 tracks total:</strong> all 45 tracks from the supplied Prequel Trilogy playlist plus the 8 Original Trilogy selections already in the theme.</p>`;
       const firstRow = controls.querySelector('.starwars-audio-settings-row');
       firstRow?.insertAdjacentElement('afterend', browser);
     }
@@ -180,7 +224,6 @@ async function toggleShuffle(): Promise<void> {
   syncStarWarsMusicMenu();
   const iframe = await ensureStarWarsPlayer();
   if (!iframe) return;
-  // Loading the expanded list guarantees the new prequel track participates in shuffle.
   youtubeCommand('loadPlaylist', [STAR_WARS_TRACK_IDS, next.index, 0]);
   await sleep(180);
   youtubeCommand('setShuffle', [next.shuffle]);
@@ -204,8 +247,6 @@ document.addEventListener('click', event => {
 
   const transport = target?.closest<HTMLElement>('[data-starwars-audio]');
   if (!transport || transport.matches('input')) return;
-  // Once the richer browser has loaded the combined playlist, the app's existing
-  // previous / play / next controls continue to work on all tracks.
   window.setTimeout(() => {
     const iframe = getStarWarsIframe();
     if (!iframe) return;
