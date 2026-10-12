@@ -1,49 +1,14 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const root = process.cwd();
-const dist = path.join(root, 'dist');
-
-if (!fs.existsSync(dist)) {
-  throw new Error('Vite dist directory does not exist.');
-}
-
-const copyFile = (source, destination) => {
-  const from = path.join(root, source);
-  const to = path.join(root, destination);
-  if (!fs.existsSync(from)) {
-    throw new Error('Required PWA file is missing: ' + source);
-  }
-  fs.mkdirSync(path.dirname(to), { recursive: true });
-  fs.copyFileSync(from, to);
-};
-
-copyFile('sw.js', 'dist/sw.js');
-copyFile('manifest.webmanifest', 'dist/manifest.webmanifest');
-copyFile('public/starwars-music-browser.js', 'dist/starwars-music-browser.js');
-
-const distIndex = path.join(dist, 'index.html');
-if (!fs.existsSync(distIndex)) {
-  throw new Error('Vite dist/index.html does not exist.');
-}
-let html = fs.readFileSync(distIndex, 'utf8');
-const musicBrowserTag = '<script src="./starwars-music-browser.js?v=2" defer></script>';
-if (!html.includes('starwars-music-browser.js')) {
-  if (!html.includes('</body>')) throw new Error('Could not find </body> in dist/index.html.');
-  html = html.replace('</body>', musicBrowserTag + '\n</body>');
-  fs.writeFileSync(distIndex, html);
-}
-
-// The source ZIPs stay in Git for rebuilds; production serves extracted clips.
-fs.rmSync(path.join(dist, 'resources/sw-sfx'), { recursive: true, force: true });
-fs.rmSync(path.join(dist, 'resources/starwars-embedded-sfx.js'), { force: true });
-
-const iconsSource = path.join(root, 'icons');
-const iconsDestination = path.join(dist, 'icons');
-if (!fs.existsSync(iconsSource)) {
-  throw new Error('Required icons directory is missing.');
-}
-fs.rmSync(iconsDestination, { recursive: true, force: true });
-fs.cpSync(iconsSource, iconsDestination, { recursive: true });
-
-console.log('Copied PWA files and injected Star Wars music browser into dist/index.html.');
+const root=process.cwd();const dist=path.join(root,'dist');if(!fs.existsSync(dist))throw new Error('Vite dist directory does not exist.');
+const rawCommit=process.env.COMMIT_REF||process.env.GITHUB_SHA||process.env.VERCEL_GIT_COMMIT_SHA||'local';const commit=String(rawCommit).replace(/[^a-zA-Z0-9._-]/g,'').slice(0,40)||'local';const builtAt=new Date().toISOString();const buildId=`${builtAt.slice(0,10).replaceAll('-','')}-${commit.slice(0,8)}`;const buildQuery=encodeURIComponent(buildId);
+const copyFile=(source,destination)=>{const from=path.join(root,source),to=path.join(root,destination);if(!fs.existsSync(from))throw new Error(`Required production file is missing: ${source}`);fs.mkdirSync(path.dirname(to),{recursive:true});fs.copyFileSync(from,to);};
+copyFile('sw.js','dist/sw.js');copyFile('manifest.webmanifest','dist/manifest.webmanifest');copyFile('public/starwars-music-browser.js','dist/starwars-music-browser.js');copyFile('public/starwars-background-rotation.js','dist/starwars-background-rotation.js');copyFile('public/studio-consolidation.js','dist/studio-consolidation.js');
+const distIndex=path.join(dist,'index.html');if(!fs.existsSync(distIndex))throw new Error('Vite dist/index.html does not exist.');let html=fs.readFileSync(distIndex,'utf8');const scripts=[`./studio-consolidation.js?v=${buildQuery}`,`./starwars-music-browser.js?v=${buildQuery}`,`./starwars-background-rotation.js?v=${buildQuery}`];for(const source of scripts){const basename=source.split('?')[0].replace('./','');if(!html.includes(basename)){if(!html.includes('</body>'))throw new Error('Could not find </body> in dist/index.html.');html=html.replace('</body>',`<script src="${source}" defer></script>\n</body>`);}}fs.writeFileSync(distIndex,html);
+const swPath=path.join(dist,'sw.js');let serviceWorker=fs.readFileSync(swPath,'utf8');serviceWorker=serviceWorker.replaceAll('__BUILD_ID__',buildId).replaceAll('__BUILD_QUERY__',buildQuery);if(serviceWorker.includes('__BUILD_'))throw new Error('Service worker build placeholders were not fully replaced.');fs.writeFileSync(swPath,serviceWorker);
+const buildMeta={buildId,commit,builtAt,source:process.env.CONTEXT||(process.env.GITHUB_ACTIONS?'ci':'local')};fs.writeFileSync(path.join(dist,'build-meta.json'),JSON.stringify(buildMeta,null,2)+'\n');
+const rotationPath=path.join(dist,'resources/sw-video/rotation-v1.json');if(!fs.existsSync(rotationPath))throw new Error('Star Wars background rotation manifest is missing.');const rotation=JSON.parse(fs.readFileSync(rotationPath,'utf8'));if(!Array.isArray(rotation.items)||rotation.items.length<2)throw new Error('Background rotation must contain at least two clips.');for(const item of rotation.items){for(const field of ['desktop','mobile']){const rel=String(item[field]||'').replace(/^\.\//,'');if(!rel||!fs.existsSync(path.join(dist,rel)))throw new Error(`Background rotation asset is missing: ${item.id}.${field}`);}}
+fs.rmSync(path.join(dist,'resources/sw-sfx'),{recursive:true,force:true});fs.rmSync(path.join(dist,'resources/starwars-embedded-sfx.js'),{force:true});
+const iconsSource=path.join(root,'icons'),iconsDestination=path.join(dist,'icons');if(!fs.existsSync(iconsSource))throw new Error('Required icons directory is missing.');fs.rmSync(iconsDestination,{recursive:true,force:true});fs.cpSync(iconsSource,iconsDestination,{recursive:true});
+console.log(`Prepared Learning Studio production build ${buildId} (${commit.slice(0,8)}).`);

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "mode": "shuffle-bag",
+  "description": "Star Wars background package rotation. With two clips, playback alternates. With three or more, a no-immediate-repeat shuffle bag is used.",
+  "items": [
+    {"id":"battle-v1","label":"Space battle I","desktop":"./resources/sw-video/starwars-battle-desktop-v1.mp4","mobile":"./resources/sw-video/starwars-battle-mobile-v1.mp4","poster":"./resources/sw-video/starwars-battle-poster-v1.jpg"},
+    {"id":"background-package-2026-10-07-01","label":"Background package II","desktop":"./resources/sw-video/background-package-2026-10-07-01.mp4","mobile":"./resources/sw-video/background-package-2026-10-07-01.mp4","poster":"./resources/sw-video/starwars-battle-poster-v1.jpg"}
+  ]
+}
