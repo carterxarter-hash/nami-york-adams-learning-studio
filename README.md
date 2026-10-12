@@ -1,44 +1,37 @@
 # NAMI York-Adams Learning Studio
 
-Public deployment source for the NAMI York-Adams Learning Studio.
+Public deployment source for the NAMI York-Adams volunteer Learning Studio.
 
-The Star Wars background plays the user-supplied October 6, 2026 space-battle
-recording as a muted, inline, looping video. Versioned H.264 files in
-`public/resources/sw-video/` provide a 1156×512 desktop version and a 720×318
-mobile version at 24 fps, plus a static poster. The original upload was
-`ScreenRecording_10-06-2026 14-13-07_1.mp4` (110.23 seconds).
-The clip's audio is absent; the existing music and curated SFX remain independent.
+## Story Mode
 
-Video is loaded only when Star Wars motion is enabled, pauses when the page is
-hidden or the theme changes, and shares the existing Pause motion control.
-Reduced-motion mode displays the poster without downloading the video.
-Playback failures restore the procedural battle. The canvas animation loop stops
-while the video is active. Video uses HTTP caching rather than service-worker
-storage. The previous procedural version is preserved in
-`backup/starwars-procedural-v12`.
+Story Mode is the single support-group simulator. It now presents two practice types under one navigation item:
 
-Background regression check: `npm run build && node tests/starwars-video-browser.mjs`.
-It checks decoded frames, looping, motion controls, theme/navigation lifecycle,
-mobile layouts, reduced motion, and missing-video fallback. `VIDEO_TEST_URL`
-can point the same check at a deployed build.
+- **Branching meetings** — longer meetings where facilitator decisions affect the room over time and can reach different outcomes.
+- **Focused branches** — the shorter scenario/debrief exercises that formerly appeared as a separate Simulation Room.
 
-Star Wars audio is extracted from the supplied archives during `npm run build`.
-The browser loads `resources/sw-audio/sounds.json` and fetches individual clips as
-needed; ZIP files are kept as build inputs and omitted from the published site.
+The former Simulation Room navigation item has been retired. Its routes remain usable internally so old bookmarks and scenario deep links do not break, but the learner sees one Story Mode experience.
 
-`scripts/starwars-audio-catalog.json` preserves the user's organized pack: 91
-clicks, 323 ambient quotes, 110 ambient effects, and 106 feedback clips split
-between Right/Wrong Answer and Single/Whole Task. Only these 630 entries (617
-unique recordings) are published. The build verifies every recording by hash.
-Movie provenance is based on the user's curation, not an automated film guess.
+## Release integrity
 
-Each pool uses a shuffled deck with no repeats until all recordings have played.
-Ambient quotes wait 7–15 seconds after playback; nonverbal/battle effects wait
-15–25 seconds independently and can overlap dialogue. The effects timeline also
-includes the clicking folder's blasters. Graded feedback interrupts ambient
-dialogue and plays sequentially. Workable/okay outcomes remain neutral. The
-ambience slider controls volume, leaving the requested timing ranges unchanged.
+Production builds generate `build-meta.json` with the Git commit, build id and timestamp. The service-worker cache name is generated from that build id instead of a manually incremented version number. Netlify headers require revalidation for the application shell, service worker and build metadata while large media keeps normal long-lived HTTP caching.
 
-Audio regression check: install Chromium with `npx playwright install chromium`,
-then run `npm run test:audio`. It checks real audio decoding, playback controls,
-load failures, mute races, theme changes, mobile layout, and bounded memory.
+CI now watches `src/**`, `public/**`, `scripts/**`, `tests/**`, PWA files and package/build configuration. Every release build runs a Story Mode/accessibility/background smoke test plus the existing Star Wars audio regression suite before its artifact is accepted.
+
+## Star Wars media
+
+The soundtrack has one event-driven 53-track browser implementation. The duplicate controller previously present in `src/main.ts` was removed, along with permanent MutationObserver/interval polling.
+
+Background video is defined by `public/resources/sw-video/rotation-v1.json`. With two clips the player alternates between them. With three or more, it uses a shuffled bag so every clip plays before reshuffling and the same clip is not immediately repeated. Video stays muted and inline, respects reduced-motion behavior and remains outside service-worker Cache Storage.
+
+To add another video when the instruction is **“add to background package rotation”**, optimize the clip for background playback, put it in `public/resources/sw-video/`, and add one manifest entry. Player logic does not need to change.
+
+## Audio assets
+
+The curated Star Wars SFX archives are canonical build inputs in this repository. `npm run build` extracts only the approved catalog to `dist/resources/sw-audio/`; source ZIPs and the embedded fallback archive are removed from production output. The former AppDeploy-to-GitHub synchronization workflow has been removed so there is one source of truth.
+
+## Tests
+
+- `npm test` — production build, unified Story Mode/release/accessibility/background smoke test, and Star Wars audio regression.
+- `npm run test:smoke` — production build plus release smoke test.
+- `npm run test:audio` — production build plus curated Star Wars audio regression.
+- `npm run test:video` — production build plus release/background smoke test.
