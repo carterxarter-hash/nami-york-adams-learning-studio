@@ -1,18 +1,25 @@
-name: Validate Netlify production build
+name: Validate Learning Studio production
 
 on:
   push:
     paths:
-      - '.github/workflows/netlify-build-check.yml'
+      - '.github/workflows/**'
       - 'index.html'
-      - 'sw.js'
+      - 'src/**'
+      - 'public/**'
       - 'scripts/**'
+      - 'tests/**'
+      - 'sw.js'
+      - 'manifest.webmanifest'
+      - 'vite.config.ts'
+      - 'netlify.toml'
       - 'package*.json'
   workflow_dispatch:
 
 jobs:
-  build:
+  build-and-smoke:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -21,11 +28,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
 
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
 
       - name: Build production site
+        env:
+          COMMIT_REF: ${{ github.sha }}
         run: npm run build
 
       - name: Verify production output
@@ -34,19 +47,26 @@ jobs:
           set -euo pipefail
           test -f dist/index.html
           test -f dist/sw.js
-          test -f dist/manifest.webmanifest
-          test -f dist/icons/icon-180.png
-          test -f dist/icons/icon-192.png
-          test -f dist/icons/icon-512.png
+          test -f dist/build-meta.json
+          test -f dist/learning-studio-v3.js
+          test -f dist/starwars-music-browser.js
+          test -f dist/resources/sw-video/rotation-v1.json
+          test -f dist/resources/sw-video/background-package-2026-10-07-01.mp4
           test -f dist/resources/sw-audio/sounds.json
-          node --input-type=module -e "import fs from 'node:fs'; const m=JSON.parse(fs.readFileSync('dist/resources/sw-audio/sounds.json')); const c=JSON.parse(fs.readFileSync('scripts/starwars-audio-catalog.json')); if(m.version!==2 || m.entries.length!==c.entries.length || m.entries.some((e,i)=>e.file!==c.entries[i].file || e.pool!==c.entries[i].pool || !fs.existsSync('dist/resources/sw-audio/'+e.file))) process.exit(1);"
+          grep -q "${GITHUB_SHA:0:12}" dist/build-meta.json
+          ! grep -q '__BUILD_ID__' dist/sw.js
           du -sh dist
-          echo 'Verified full PWA shell and individually playable Star Wars audio.'
 
-      - name: Upload verified Netlify build
+      - name: Run release smoke test
+        run: node tests/release-smoke.mjs
+
+      - name: Run Star Wars audio regression test
+        run: node tests/starwars-audio-browser.mjs
+
+      - name: Upload verified build
         uses: actions/upload-artifact@v4
         with:
-          name: netlify-production-dist
+          name: learning-studio-production-dist
           path: dist/
           compression-level: 0
           retention-days: 7
