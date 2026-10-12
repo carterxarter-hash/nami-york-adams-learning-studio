@@ -1,8 +1,8 @@
 {
-  "name": "NAMI York Adams",
-  "short_name": "NAMI York Adams",
-  "description": "NAMI York-Adams volunteer learning, practice, scenarios, flashcards, and facilitator tools.",
-  "start_url": "./?v=4#home",
+  "name": "NAMI York Adams Learning Studio",
+  "short_name": "NAMI Learning",
+  "description": "NAMI York-Adams volunteer learning, branching Story Mode support-group practice, flashcards, and facilitator tools.",
+  "start_url": "./#home",
   "scope": "./",
   "display": "standalone",
   "background_color": "#091a35",
