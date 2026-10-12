@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "strategy": "shuffle-bag-no-repeat",
+  "items": [
+    {
+      "id": "battle-v1",
+      "desktop": "./resources/sw-video/battle-desktop-v1.mp4",
+      "mobile": "./resources/sw-video/battle-mobile-v1.mp4",
+      "poster": "./resources/sw-video/battle-poster-v1.jpg"
+    },
+    {
+      "id": "background-package-2026-10-07-01",
+      "desktop": "./resources/sw-video/background-package-2026-10-07-01.mp4",
+      "mobile": "./resources/sw-video/background-package-2026-10-07-01.mp4",
+      "poster": "./resources/sw-video/battle-poster-v1.jpg"
+    }
+  ]
+}
