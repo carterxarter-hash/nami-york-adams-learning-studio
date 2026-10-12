@@ -9,7 +9,10 @@
     "build": "vite build",
     "postbuild": "node scripts/prepare-dist.mjs",
     "preview": "vite preview",
-    "test:audio": "npm run build && node tests/starwars-audio-browser.mjs"
+    "test": "npm run build && node tests/release-smoke.mjs && node tests/starwars-audio-browser.mjs",
+    "test:smoke": "npm run build && node tests/release-smoke.mjs",
+    "test:audio": "npm run build && node tests/starwars-audio-browser.mjs",
+    "test:video": "npm run build && node tests/release-smoke.mjs"
   },
   "dependencies": {
     "adm-zip": "^0.5.16",
